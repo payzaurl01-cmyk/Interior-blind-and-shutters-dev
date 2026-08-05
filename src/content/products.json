@@ -1,0 +1,32 @@
+[
+  {
+    "handle": "basic",
+    "name": "Basic",
+    "price": "$999.00",
+    "period": "/month",
+    "description": "Unlock your needs and Suitable plan for your every deal and management",
+    "features": [
+      "Access to Core Features – Use of essential tools or services",
+      "Limited Storage – Example: 5 GB or limited project uploads",
+      "Email Support Only – Standard response time",
+      "Single User Access – One user account per plan",
+      "Basic Analytics – Limited data insights or dashboards",
+      "Community Access – Join user forums or online groups"
+    ]
+  },
+  {
+    "handle": "advance",
+    "name": "Advance",
+    "price": "$799.00",
+    "period": "/month",
+    "description": "Unlock your needs and Suitable plan for your every deal and management",
+    "features": [
+      "Full Feature Access – Includes all advanced tools and modules",
+      "Unlimited Storage or Projects – No data caps",
+      "Priority Support – 24/7 live chat or dedicated account manager",
+      "Multi-User Access – Team or enterprise account options",
+      "Custom Branding – White-label options or brand customization",
+      "API Access & Advanced Integrations – Connect with any platform"
+    ]
+  }
+]

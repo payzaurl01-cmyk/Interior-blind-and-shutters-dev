@@ -1,0 +1,30 @@
+{
+  "name": "nuvora",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nuvora — sustainable architecture & real estate template built with Next.js 16 + React 19 + TypeScript.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "gray-matter": "^4.0.3",
+    "next": "^16.0.0",
+    "next-mdx-remote": "^6.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}
