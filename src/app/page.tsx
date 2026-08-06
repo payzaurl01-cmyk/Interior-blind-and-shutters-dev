@@ -49,7 +49,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="visual-wrap">
-          <img alt="" className="visual hero-background-image" loading="eager" src="/assets/pic1.png" />
+          <img alt="" className="visual hero-background-image" decoding="async" fetchPriority="high" height="941" loading="eager" src="/assets/pic1-optimized.webp" width="1672" />
           <div className="visual-overlay hero-overlay" />
         </div>
             </section>
@@ -71,7 +71,7 @@ export default function HomePage() {
                   </div>
                   <div className="window-collection-grid">
                     <a className="window-product-card reveal" href="/contact">
-                      <img alt="Roller blinds installed in a bright window" className="window-product-image" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48%20%281%29.jpeg" />
+                      <img alt="Roller blinds installed in a bright window" className="window-product-image" decoding="async" height="1600" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48%20%281%29.jpeg" width="1200" />
                       <span className="window-card-number">01</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
@@ -80,7 +80,7 @@ export default function HomePage() {
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/contact">
-                      <img alt="Light filtering roller blinds beside a chandelier" className="window-product-image" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49%20%281%29.jpeg" />
+                      <img alt="Light filtering roller blinds beside a chandelier" className="window-product-image" decoding="async" height="1600" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49%20%281%29.jpeg" width="1200" />
                       <span className="window-card-number">02</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
@@ -89,7 +89,7 @@ export default function HomePage() {
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/contact">
-                      <img alt="Dark blockout roller blinds in a modern room" className="window-product-image" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48.jpeg" />
+                      <img alt="Dark blockout roller blinds in a modern room" className="window-product-image" decoding="async" height="994" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48.jpeg" width="1600" />
                       <span className="window-card-number">03</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
@@ -98,7 +98,7 @@ export default function HomePage() {
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/contact">
-                      <img alt="Large grey roller blinds on sliding doors" className="window-product-image" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49.jpeg" />
+                      <img alt="Large grey roller blinds on sliding doors" className="window-product-image" decoding="async" height="1200" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49.jpeg" width="1600" />
                       <span className="window-card-number">04</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
@@ -107,7 +107,7 @@ export default function HomePage() {
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/contact">
-                      <img alt="Neutral roller blind fitted inside a white frame" className="window-product-image" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49%20%282%29.jpeg" />
+                      <img alt="Neutral roller blind fitted inside a white frame" className="window-product-image" decoding="async" height="1600" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49%20%282%29.jpeg" width="900" />
                       <span className="window-card-number">05</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
@@ -116,7 +116,7 @@ export default function HomePage() {
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/contact">
-                      <img alt="Grey indoor roller blinds fitted across a large window" className="window-product-image" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48.jpeg" />
+                      <img alt="Grey indoor roller blinds fitted across a large window" className="window-product-image" decoding="async" height="994" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48.jpeg" width="1600" />
                       <span className="window-card-number">06</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
@@ -143,8 +143,11 @@ export default function HomePage() {
                         <img
                           alt="Vertical blinds shaping warm natural light across a modern workspace"
                           className="window-story-image"
+                          decoding="async"
+                          height="1066"
                           loading="lazy"
-                          src="/assets/about%20pic%20folder/pexels-brentsingletonphoto-36486514%20%281%29.jpg"
+                          src="/assets/about%20pic%20folder/story-main.webp"
+                          width="1600"
                         />
                       </div>
                       <figcaption className="window-story-caption">
@@ -195,8 +198,11 @@ export default function HomePage() {
                           <img
                             alt="Statement window screens bringing filtered light into a dining space"
                             className="window-story-image"
+                            decoding="async"
+                            height="1600"
                             loading="lazy"
-                            src="/assets/about%20pic%20folder/pexels-paolo-rossa-1121474291-28665098.jpg"
+                            src="/assets/about%20pic%20folder/story-showcase.webp"
+                            width="1200"
                           />
                         </div>
                         <figcaption className="window-story-caption window-story-caption-light">
@@ -212,8 +218,11 @@ export default function HomePage() {
                             <img
                               alt="Venetian blinds casting architectural shadows in a bright living room"
                               className="window-story-image"
+                              decoding="async"
+                              height="1359"
                               loading="lazy"
-                              src="/assets/about%20pic%20folder/pexels-nesibe-zehra-aslan-194762462-12200379.jpg"
+                              src="/assets/about%20pic%20folder/story-light.webp"
+                              width="900"
                             />
                           </div>
                           <figcaption className="window-story-caption window-story-caption-light">
@@ -228,8 +237,11 @@ export default function HomePage() {
                             <img
                               alt="A hand adjusting horizontal blinds to control daylight"
                               className="window-story-image"
+                              decoding="async"
+                              height="1091"
                               loading="lazy"
-                              src="/assets/about%20pic%20folder/pexels-2955122-4492180.jpg"
+                              src="/assets/about%20pic%20folder/story-detail.webp"
+                              width="900"
                             />
                           </div>
                           <figcaption className="window-story-caption window-story-caption-light">

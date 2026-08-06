@@ -30,41 +30,24 @@ export function NuvoraScripts() {
     /* -------------------------------------------------------------- reveal */
     function initReveal() {
       const els = $$<HTMLElement>(".reveal");
-      if (!els.length) return;
-      function check() {
-        const vh = window.innerHeight || document.documentElement.clientHeight;
-        const trig = vh * 0.9;
-        for (let i = els.length - 1; i >= 0; i--) {
-          if (els[i].getBoundingClientRect().top < trig) {
-            els[i].classList.add("is-visible");
-            els.splice(i, 1);
-          }
-        }
-        if (!els.length) {
-          window.removeEventListener("scroll", onScroll);
-          window.removeEventListener("resize", onScroll);
-        }
+      if (!els.length) return () => {};
+      function reveal(el: HTMLElement) {
+        el.classList.add("is-visible");
+        window.setTimeout(() => el.classList.add("reveal-complete"), 1300);
       }
-      let scheduled = false;
-      function onScroll() {
-        if (scheduled) return;
-        scheduled = true;
-        const raf =
-          window.requestAnimationFrame || ((f: FrameRequestCallback) => setTimeout(f, 16));
-        raf(() => {
-          check();
-          scheduled = false;
-        });
-        setTimeout(() => {
-          if (scheduled) {
-            check();
-            scheduled = false;
-          }
-        }, 120);
-      }
-      window.addEventListener("scroll", onScroll, { passive: true });
-      window.addEventListener("resize", onScroll);
-      check();
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            reveal(entry.target as HTMLElement);
+            observer.unobserve(entry.target);
+          });
+        },
+        { rootMargin: "0px 0px -10% 0px" },
+      );
+      els.forEach((el) => observer.observe(el));
+      return () => observer.disconnect();
     }
 
     /* -------------------------------------- window story scroll perspective */
@@ -75,13 +58,18 @@ export function NuvoraScripts() {
       }
 
       const media = $$<HTMLElement>("[data-story-depth]", section);
+      const activeMedia = new Set<HTMLElement>();
+      const mediaIndexes = new Map(media.map((item, index) => [item, index]));
+      let observer: IntersectionObserver | null = null;
       let frame = 0;
+      let listening = false;
       function update() {
         frame = 0;
         const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-        media.forEach((item, index) => {
+        activeMedia.forEach((item) => {
           const rect = item.getBoundingClientRect();
           const depth = Number(item.dataset.storyDepth || 30);
+          const index = mediaIndexes.get(item) || 0;
           const progress = Math.max(0, Math.min(1, (viewportHeight - rect.top) / (viewportHeight + rect.height)));
           const centeredProgress = progress - 0.5;
           const direction = index % 2 === 0 ? 1 : -1;
@@ -94,19 +82,64 @@ export function NuvoraScripts() {
         });
       }
       function requestUpdate() {
-        if (frame) return;
+        if (frame || !activeMedia.size) return;
         frame = window.requestAnimationFrame(update);
       }
 
-      window.addEventListener("scroll", requestUpdate, { passive: true });
-      window.addEventListener("resize", requestUpdate);
-      update();
+      function syncListeners() {
+        if (activeMedia.size && !listening) {
+          window.addEventListener("scroll", requestUpdate, { passive: true });
+          window.addEventListener("resize", requestUpdate);
+          listening = true;
+        } else if (!activeMedia.size && listening) {
+          window.removeEventListener("scroll", requestUpdate);
+          window.removeEventListener("resize", requestUpdate);
+          listening = false;
+        }
+      }
+
+      if ("IntersectionObserver" in window) {
+        observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const item = entry.target as HTMLElement;
+              if (entry.isIntersecting) activeMedia.add(item);
+              else activeMedia.delete(item);
+              item.classList.toggle("is-scroll-active", entry.isIntersecting);
+            });
+            syncListeners();
+            requestUpdate();
+          },
+          { rootMargin: "35% 0px" },
+        );
+        media.forEach((item) => observer!.observe(item));
+      } else {
+        media.forEach((item) => {
+          activeMedia.add(item);
+          item.classList.add("is-scroll-active");
+        });
+        syncListeners();
+        requestUpdate();
+      }
 
       return () => {
-        window.removeEventListener("scroll", requestUpdate);
-        window.removeEventListener("resize", requestUpdate);
+        observer?.disconnect();
+        activeMedia.clear();
+        syncListeners();
         if (frame) window.cancelAnimationFrame(frame);
       };
+    }
+
+    /* Pause decorative looping motion when its component is off screen. */
+    function initMotionPerformance() {
+      const statsCard = $<HTMLElement>(".hero-stats-card");
+      if (!statsCard || !("IntersectionObserver" in window)) return () => {};
+      const observer = new IntersectionObserver(
+        ([entry]) => statsCard.classList.toggle("is-motion-active", entry.isIntersecting),
+        { threshold: 0.05 },
+      );
+      observer.observe(statsCard);
+      return () => observer.disconnect();
     }
 
     /* -------------------------------------------- hamburger full-screen menu */
@@ -598,8 +631,9 @@ export function NuvoraScripts() {
     }
 
     /* -------------------------------------------------------------- boot */
-    initReveal();
+    const destroyReveal = initReveal();
     const destroyWindowStoryScroll = initWindowStoryScroll();
+    const destroyMotionPerformance = initMotionPerformance();
     initNav();
     initTabs();
     initCounters();
@@ -610,7 +644,11 @@ export function NuvoraScripts() {
     initVideo();
     initCart();
     initCheckout();
-    return destroyWindowStoryScroll;
+    return () => {
+      destroyReveal();
+      destroyWindowStoryScroll();
+      destroyMotionPerformance();
+    };
   }, []);
 
   return null;
