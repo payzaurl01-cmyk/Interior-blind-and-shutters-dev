@@ -1,129 +1,242 @@
-import { HeroQuoteCard } from "@/components/ui/hero-quote-card";
-
 export default function HomePage() {
   return (
     <>
       <section className="section hero-background">
-              <div className="container">
-                <div className="hero-wrap">
-                  <div className="inner-title-box hero reveal">
-                    <h1 className="hero-white-title">
-                      Nature inspired living spaces for a
-                      <span className="italic none">
-                        balanced
-                      </span>
-                      <span className="italic none">
-                        beautiful  Life.
-                      </span>
-                    </h1>
+        <div className="container">
+          <div className="hero-wrap hero-home-wrap">
+            <div className="hero-home-content reveal">
+              <p className="hero-kicker">MADE-TO-MEASURE WINDOW FURNISHINGS</p>
+              <h1 className="hero-white-title home-hero-title">
+                <span>Beautiful light.</span>
+                <span>Better privacy.</span>
+                <span className="italic none">A home that feels right.</span>
+              </h1>
+              <p className="hero-copy">
+                Custom blinds, shutters and curtains designed, measured and installed for the way you live.
+              </p>
+              <div className="hero-actions">
+                <a className="primary-button inline-block" href="/contact">
+                  <div className="primary-button-text-wrap">
+                    <div className="primary-button-text">Get a free measure &amp; quote</div>
+                    <div className="primary-button-hover-text">Get a free measure &amp; quote</div>
                   </div>
-                  <div className="hero-flex-box">
-                    <div className="hero-left-box reveal">
-                      <a className="primary-button inline-block" href="/contact">
-                        <div className="primary-button-text-wrap">
-                          <div className="primary-button-text">
-                            GET IN TOUCH
-                          </div>
-                          <div className="primary-button-hover-text">
-                            GET IN TOUCH
-                          </div>
-                        </div>
-                      </a>
-                      <div className="scroll-wrap">
-                        <div className="description white">
-                          01/2025
-                        </div>
-                        <a className="description white" href="#about">
-                          SCROLL DOWN
-                        </a>
-                      </div>
-                    </div>
-                    <div className="hero-right-box reveal">
-                      <div className="hero-single-card">
-                        <div className="hero-card-top-one-box">
-                          <div className="hero-feature-box">
-                            <div className="hero-feature-icon-box">
-                              <img alt="" className="hero-icon" loading="lazy" src="/assets/images/hero-right.svg" />
-                            </div>
-                            <div className="small-text-regular all-caps">
-                              Feature
-                            </div>
-                          </div>
-                          <img alt="" className="hero-card-dot" loading="lazy" src="/assets/images/Dot.svg" />
-                        </div>
-                        <div className="hero-card-image-box">
-                          <img alt="" className="hero-video-thumbnail" loading="eager" sizes="(max-width: 676px) 100vw, 676px" src="/assets/images/Hero-Video-Thumbnail.webp" srcSet="/assets/images/Hero-Video-Thumbnail-p-500.webp 500w, /assets/images/Hero-Video-Thumbnail.webp 676w" />
-                          <div className="hero-card-video-wrap">
-                            <a className="inline-block" data-lightbox="video" data-video-id="setu9Ir1miY">
-                              <div className="hero-video-button">
-                                <img alt="" className="hero-button-icon" loading="lazy" src="/assets/images/solar_play-bold.svg" />
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        <div className="hero-review-box">
-                          <a className="leave-a-review" href="/project">
-                            VIEW OUR WORK
-                          </a>
-                        </div>
-                      </div>
-                      <div className="hero-card-two">
-                        <HeroQuoteCard />
-                      </div>
-                    </div>
-                  </div>
+                </a>
+                <a className="hero-range-link" href="/project">
+                  <span>Explore the range</span>
+                  <span className="hero-range-arrow" aria-hidden="true">
+                    ↗
+                  </span>
+                </a>
+              </div>
+
+            </div>
+            <div className="hero-home-bottom reveal">
+              <div className="hero-stats-card">
+                <div className="hero-stat">
+                  <span className="hero-stat-value">4.9</span>
+                  <span className="hero-stat-label">Average customer rating</span>
+                </div>
+                <div className="hero-stat">
+                  <span className="hero-stat-value">Free</span>
+                  <span className="hero-stat-label">In-home measure &amp; quote</span>
+                </div>
+                <div className="hero-stat">
+                  <span className="hero-stat-value">Custom</span>
+                  <span className="hero-stat-label">Made for every opening</span>
                 </div>
               </div>
-              <div className="visual-wrap">
-                <img alt="" className="visual" loading="lazy" sizes="(max-width: 5760px) 100vw, 5760px" src="/assets/images/Hero-Background-Image.webp" srcSet="/assets/images/Hero-Background-Image-p-500.webp 500w, /assets/images/Hero-Background-Image-p-800.webp 800w, /assets/images/Hero-Background-Image-p-1080.webp 1080w, /assets/images/Hero-Background-Image-p-1600.webp 1600w, /assets/images/Hero-Background-Image-p-2000.webp 2000w, /assets/images/Hero-Background-Image-p-2600.webp 2600w, /assets/images/Hero-Background-Image-p-3200.webp 3200w, /assets/images/Hero-Background-Image.webp 5760w" />
-                <div className="visual-overlay">
-                </div>
-              </div>
+            </div>
+          </div>
+        </div>
+        <div className="visual-wrap">
+          <img alt="" className="visual hero-background-image" loading="eager" src="/assets/pic1.png" />
+          <div className="visual-overlay hero-overlay" />
+        </div>
             </section>
             <section className="section hero-about" id="about">
               <div className="container">
-                <div className="hero-about-wrap">
-                  <div className="hero-about-left-box">
-                    <div className="hero-about-icon-box reveal">
-                      <img alt="" className="hero-about-icon" loading="lazy" src="/assets/images/about-right.svg" />
-                    </div>
-                    <div className="divider-about one">
-                    </div>
-                    <div className="hero-about-left">
-                      <h2 className="hero-about-text reveal">
-                        WE BEGAN OUR JOURNEY BY DESIGNING BESPOKE STABLES COUNTRYSIDE RETREATS FOR PRIVATE CLIENTS WHO SHARED OUR LOVE FOR DESIGN.
-                      </h2>
-                      <div className="hero-about-button reveal">
-                        <a className="primary-button inline-block" href="/about">
-                          <div className="primary-button-text-wrap">
-                            <div className="primary-button-text">
-                              ABOUT US
-                            </div>
-                            <div className="primary-button-hover-text">
-                              ABOUT US
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div className="divider-about two">
-                    </div>
+                <div className="hero-about-wrap window-collection-wrap">
+                  <div className="window-collection-header">
+                    <p className="window-collection-kicker reveal">
+                      OUR WINDOW COLLECTION
+                    </p>
+                    <h2 className="window-collection-title reveal">
+                      <span>These aren’t just</span>
+                      <span>blinds.</span>
+                      <span className="italic none">They’re part of the room.</span>
+                    </h2>
+                    <p className="window-collection-copy reveal">
+                      We help you balance privacy, natural light, temperature and style—then measure and install everything properly.
+                    </p>
                   </div>
-                  <div className="hero-about-right">
-                    <div className="hero-about-right-text">
-                      <p className="secondary-text-regular is-top reveal">
-                        <span className="secondary-text">
-                          At Nuvora
-                        </span>
-                        , we go beyond traditional real estate practices. Our process is rooted in collaboration and co-creation—ensuring that each project is thoughtfully tailored to reflect the emotional and practical needs of our clients and their lifestyle, including those shared with their equine companions.
-                      </p>
-                      <p className="secondary-text-regular reveal">
-                        Every property we design or represent is a one-of-a-kind expression of our client’s vision. From serene countryside estates to purpose-built equestrian retreats, we are committed to crafting distinctive.
-                      </p>
+                  <div className="window-collection-grid">
+                    <a className="window-product-card reveal" href="/contact">
+                      <img alt="Roller blinds installed in a bright window" className="window-product-image" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48%20%281%29.jpeg" />
+                      <span className="window-card-number">01</span>
+                      <span className="window-card-arrow" aria-hidden="true">↗</span>
+                      <span className="window-card-content">
+                        <span className="window-card-title">Roller Blinds</span>
+                        <span className="window-card-text">Clean-lined blockout, sunscreen and light-filtering options for every room.</span>
+                      </span>
+                    </a>
+                    <a className="window-product-card reveal" href="/contact">
+                      <img alt="Light filtering roller blinds beside a chandelier" className="window-product-image" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49%20%281%29.jpeg" />
+                      <span className="window-card-number">02</span>
+                      <span className="window-card-arrow" aria-hidden="true">↗</span>
+                      <span className="window-card-content">
+                        <span className="window-card-title">Light Filtering</span>
+                        <span className="window-card-text">Soft daylight control that keeps rooms calm, private and beautifully bright.</span>
+                      </span>
+                    </a>
+                    <a className="window-product-card reveal" href="/contact">
+                      <img alt="Dark blockout roller blinds in a modern room" className="window-product-image" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48.jpeg" />
+                      <span className="window-card-number">03</span>
+                      <span className="window-card-arrow" aria-hidden="true">↗</span>
+                      <span className="window-card-content">
+                        <span className="window-card-title">Blockout Blinds</span>
+                        <span className="window-card-text">A polished finish for bedrooms, media rooms and spaces that need full privacy.</span>
+                      </span>
+                    </a>
+                    <a className="window-product-card reveal" href="/contact">
+                      <img alt="Large grey roller blinds on sliding doors" className="window-product-image" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49.jpeg" />
+                      <span className="window-card-number">04</span>
+                      <span className="window-card-arrow" aria-hidden="true">↗</span>
+                      <span className="window-card-content">
+                        <span className="window-card-title">Sliding Door Blinds</span>
+                        <span className="window-card-text">Practical, made-to-measure coverage for wide openings and everyday living.</span>
+                      </span>
+                    </a>
+                    <a className="window-product-card reveal" href="/contact">
+                      <img alt="Neutral roller blind fitted inside a white frame" className="window-product-image" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49%20%282%29.jpeg" />
+                      <span className="window-card-number">05</span>
+                      <span className="window-card-arrow" aria-hidden="true">↗</span>
+                      <span className="window-card-content">
+                        <span className="window-card-title">Custom Fit Blinds</span>
+                        <span className="window-card-text">Measured, made and installed neatly so every edge feels intentional.</span>
+                      </span>
+                    </a>
+                    <a className="window-product-card reveal" href="/contact">
+                      <img alt="Grey indoor roller blinds fitted across a large window" className="window-product-image" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48.jpeg" />
+                      <span className="window-card-number">06</span>
+                      <span className="window-card-arrow" aria-hidden="true">↗</span>
+                      <span className="window-card-content">
+                        <span className="window-card-title">Outdoor Blinds</span>
+                        <span className="window-card-text">Weather-aware shading for patios, balconies and flexible outdoor spaces.</span>
+                      </span>
+                    </a>
+                  </div>
+                  <div className="window-collection-action reveal">
+                    <a className="window-collection-button inline-block" href="/contact">
+                      <span>View all window furnishings</span>
+                      <span aria-hidden="true">↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section className="section window-story" aria-labelledby="window-story-title">
+              <div className="container">
+                <div className="window-story-intro">
+                  <div className="window-story-reveal reveal">
+                    <figure className="window-story-media window-story-media-main" data-story-depth="34">
+                      <div className="window-story-image-viewport">
+                        <img
+                          alt="Vertical blinds shaping warm natural light across a modern workspace"
+                          className="window-story-image"
+                          loading="lazy"
+                          src="/assets/about%20pic%20folder/pexels-brentsingletonphoto-36486514%20%281%29.jpg"
+                        />
+                      </div>
+                      <figcaption className="window-story-caption">
+                        <span>01</span>
+                        <span>Light, considered</span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div className="window-story-content">
+                    <p className="window-story-kicker reveal">DESIGNED AROUND REAL LIFE</p>
+                    <h2 className="window-story-title reveal" id="window-story-title">
+                      <span>Control the day</span>
+                      <span className="italic none">without closing it out.</span>
+                    </h2>
+                    <p className="window-story-copy reveal">
+                      Choose how much light comes in, where privacy begins, and how the room feels from morning to evening. Our recommendations consider window orientation, room use, heat, glare and the look you want to keep.
+                    </p>
+                    <ul className="window-story-list reveal">
+                      <li><span aria-hidden="true">↗</span> In-home product and fabric consultation</li>
+                      <li><span aria-hidden="true">↗</span> Accurate professional measurement</li>
+                      <li><span aria-hidden="true">↗</span> Clear, itemised quotation</li>
+                      <li><span aria-hidden="true">↗</span> Coordinated installation and aftercare</li>
+                    </ul>
+                    <a className="window-story-link reveal" href="/contact">
+                      <span>How we work</span>
+                      <span aria-hidden="true">↗</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div className="window-story-projects">
+                  <div className="window-story-project-heading">
+                    <div>
+                      <p className="window-story-kicker reveal">INSTALLED PROJECT SHOWCASE</p>
+                      <h2 className="window-story-title window-story-project-title reveal">
+                        <span>A finish that belongs</span>
+                        <span className="italic none">in the room.</span>
+                      </h2>
                     </div>
-                    <div className="hero-about-image-box">
-                      <img alt="" loading="lazy" sizes="(max-width: 3220px) 100vw, 3220px" src="/assets/images/About-Image.webp" srcSet="/assets/images/About-Image-p-500.webp 500w, /assets/images/About-Image-p-800.webp 800w, /assets/images/About-Image-p-1080.webp 1080w, /assets/images/About-Image-p-1600.webp 1600w, /assets/images/About-Image-p-2000.webp 2000w, /assets/images/About-Image-p-2600.webp 2600w, /assets/images/About-Image-p-3200.webp 3200w, /assets/images/About-Image.webp 3220w" />
-                      <div className="dashbord-image-overlay">
+                    <p className="window-story-copy window-story-project-copy reveal">
+                      See how blinds, screens and specialist systems transform light, privacy and comfort across very different spaces.
+                    </p>
+                  </div>
+                  <div className="window-story-gallery">
+                    <div className="window-story-reveal window-story-gallery-main reveal">
+                      <figure className="window-story-media" data-story-depth="28">
+                        <div className="window-story-image-viewport">
+                          <img
+                            alt="Statement window screens bringing filtered light into a dining space"
+                            className="window-story-image"
+                            loading="lazy"
+                            src="/assets/about%20pic%20folder/pexels-paolo-rossa-1121474291-28665098.jpg"
+                          />
+                        </div>
+                        <figcaption className="window-story-caption window-story-caption-light">
+                          <span>02</span>
+                          <span>Statement screening</span>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div className="window-story-gallery-stack">
+                      <div className="window-story-reveal reveal">
+                        <figure className="window-story-media" data-story-depth="42">
+                          <div className="window-story-image-viewport">
+                            <img
+                              alt="Venetian blinds casting architectural shadows in a bright living room"
+                              className="window-story-image"
+                              loading="lazy"
+                              src="/assets/about%20pic%20folder/pexels-nesibe-zehra-aslan-194762462-12200379.jpg"
+                            />
+                          </div>
+                          <figcaption className="window-story-caption window-story-caption-light">
+                            <span>03</span>
+                            <span>Soft privacy</span>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <div className="window-story-reveal reveal">
+                        <figure className="window-story-media" data-story-depth="52">
+                          <div className="window-story-image-viewport">
+                            <img
+                              alt="A hand adjusting horizontal blinds to control daylight"
+                              className="window-story-image"
+                              loading="lazy"
+                              src="/assets/about%20pic%20folder/pexels-2955122-4492180.jpg"
+                            />
+                          </div>
+                          <figcaption className="window-story-caption window-story-caption-light">
+                            <span>04</span>
+                            <span>Made effortless</span>
+                          </figcaption>
+                        </figure>
                       </div>
                     </div>
                   </div>

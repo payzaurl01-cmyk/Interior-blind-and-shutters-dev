@@ -67,6 +67,48 @@ export function NuvoraScripts() {
       check();
     }
 
+    /* -------------------------------------- window story scroll perspective */
+    function initWindowStoryScroll() {
+      const section = $<HTMLElement>(".window-story");
+      if (!section || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        return () => {};
+      }
+
+      const media = $$<HTMLElement>("[data-story-depth]", section);
+      let frame = 0;
+      function update() {
+        frame = 0;
+        const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+        media.forEach((item, index) => {
+          const rect = item.getBoundingClientRect();
+          const depth = Number(item.dataset.storyDepth || 30);
+          const progress = Math.max(0, Math.min(1, (viewportHeight - rect.top) / (viewportHeight + rect.height)));
+          const centeredProgress = progress - 0.5;
+          const direction = index % 2 === 0 ? 1 : -1;
+          const offset = centeredProgress * depth * 1.8;
+          item.style.setProperty("--story-x", (centeredProgress * direction * 10).toFixed(2) + "px");
+          item.style.setProperty("--story-y", offset.toFixed(2) + "px");
+          item.style.setProperty("--story-rotate", ((0.5 - progress) * 7).toFixed(2) + "deg");
+          item.style.setProperty("--story-rotate-y", (centeredProgress * direction * 4).toFixed(2) + "deg");
+          item.style.setProperty("--story-image-y", (-offset * 0.45).toFixed(2) + "px");
+        });
+      }
+      function requestUpdate() {
+        if (frame) return;
+        frame = window.requestAnimationFrame(update);
+      }
+
+      window.addEventListener("scroll", requestUpdate, { passive: true });
+      window.addEventListener("resize", requestUpdate);
+      update();
+
+      return () => {
+        window.removeEventListener("scroll", requestUpdate);
+        window.removeEventListener("resize", requestUpdate);
+        if (frame) window.cancelAnimationFrame(frame);
+      };
+    }
+
     /* -------------------------------------------- hamburger full-screen menu */
     function initNav() {
       const overlay = $<HTMLElement>(".open-menu");
@@ -557,6 +599,7 @@ export function NuvoraScripts() {
 
     /* -------------------------------------------------------------- boot */
     initReveal();
+    const destroyWindowStoryScroll = initWindowStoryScroll();
     initNav();
     initTabs();
     initCounters();
@@ -567,6 +610,7 @@ export function NuvoraScripts() {
     initVideo();
     initCart();
     initCheckout();
+    return destroyWindowStoryScroll;
   }, []);
 
   return null;
