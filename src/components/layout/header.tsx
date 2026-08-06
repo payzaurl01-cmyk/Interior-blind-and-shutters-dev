@@ -4,6 +4,7 @@
 
 import { usePathname } from "next/navigation";
 
+
 export function Header() {
   // The adaptive logo: the dark home hero keeps the white logo (.v1); every other
   // (light-background) page adds `nav-on-light` so the black logo (.v2) shows.
@@ -16,8 +17,8 @@ export function Header() {
                   <div className="navbar-wrapper">
                     <div className="nav-content-wrap">
                       <a aria-current="page" className="nav-logo-wrap inline-block" href="/">
-                        {/* <img alt="" className="nav-logo v1" loading="lazy" src="/assets/images/Nuvora.svg" /> */}
-                        <h1 className="color- ">Interior blind and shutters</h1>
+
+                        <p className="nav-logo-text text-white">Interior blind and shutters</p>
                         <img alt="Nav Logo" className="nav-logo v2" loading="lazy" src="/assets/images/Nuvora-Black.svg" />
                       </a>
                       <div className="nav-item-wrap hide">
