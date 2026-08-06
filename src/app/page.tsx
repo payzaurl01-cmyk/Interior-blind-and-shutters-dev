@@ -1,5 +1,5 @@
-// Nuvora template — this page's markup mirrors the original design; styling comes
-// from /assets/css/styles.css. Edit copy and image sources directly below.
+import { HeroQuoteCard } from "@/components/ui/hero-quote-card";
+
 export default function HomePage() {
   return (
     <>
@@ -62,55 +62,13 @@ export default function HomePage() {
                           </div>
                         </div>
                         <div className="hero-review-box">
-                          <a className="leave-a-review" href="/contact">
-                            Leave a review
+                          <a className="leave-a-review" href="/project">
+                            VIEW OUR WORK
                           </a>
                         </div>
                       </div>
                       <div className="hero-card-two">
-                        <div className="hero-rating-box">
-                          <div className="hero-reting-box">
-                            <p className="hero-card-reting">
-                              4.9
-                            </p>
-                            <div className="small-text">
-                              /5
-                            </div>
-                          </div>
-                          <div className="hero-reating-description">
-                            We’ve successfully delivered over
-                            <span className="small-text">
-                              56 projects
-                            </span>
-                            that drive real results for our clients.
-                          </div>
-                        </div>
-                        <div className="hero-card-real-box">
-                          <p className="primary-real-text">
-                            Real- Estate
-                          </p>
-                        </div>
-                        <div className="hero-card-author-wrap">
-                          <div className="hero-card-author-box">
-                            <div className="hero-card-author-single-box">
-                              <img alt="" className="hero-card-author" loading="eager" src="/assets/images/hero-author-image.webp" />
-                            </div>
-                            <div className="hero-card-author-single-box margin-left">
-                              <img alt="" className="hero-card-author" loading="eager" src="/assets/images/hero-author-image-2.webp" />
-                            </div>
-                            <div className="hero-card-author-single-box margin-left">
-                              <img alt="" className="hero-card-author" loading="eager" src="/assets/images/hero-author-image-3.webp" />
-                            </div>
-                            <div className="hero-card-author-single-box number">
-                              <div className="author-number">
-                                24+
-                              </div>
-                            </div>
-                          </div>
-                          <div className="hero-card-icon-wrap">
-                            <img alt="" className="hero-card-icon" loading="lazy" src="/assets/images/hero-right.svg" />
-                          </div>
-                        </div>
+                        <HeroQuoteCard />
                       </div>
                     </div>
                   </div>
@@ -542,7 +500,7 @@ export default function HomePage() {
                         <div className="counter-single-box reveal">
                           <div className="counter-description-box">
                             <div className="small-text counter">
-                              PROJECTS COMPLETED
+                              PROJECTSCOMPLETED
                             </div>
                           </div>
                           <div className="counter-number-wrap">
@@ -633,7 +591,7 @@ export default function HomePage() {
                         <div className="counter-single-box reveal">
                           <div className="counter-description-box">
                             <div className="small-text counter">
-                              AWARDS HAVE  RECEIVED
+                              AWARDS HAVE RECEIVED
                             </div>
                           </div>
                           <div className="counter-number-wrap">
