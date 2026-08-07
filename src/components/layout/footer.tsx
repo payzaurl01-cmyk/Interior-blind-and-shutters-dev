@@ -11,7 +11,10 @@ export function Footer() {
                     <div className="footer-about-box">
                       <div className="footer-logo-wrap">
                         <a aria-current="page" className="footer-logo inline-block" href="/">
-                          <img alt="Site Logo" className="logo" loading="lazy" src="/assets/images/Nuvora-Black.svg" />
+                          <span className="site-brand footer-site-brand">
+                            <img alt="" className="site-brand-image" decoding="async" height="42" loading="lazy" src="/assets/logo.jpeg" width="42" />
+                            <span className="site-brand-text">Interior Blinds &amp; Shutters</span>
+                          </span>
                         </a>
                         <div className="footer-about-box">
                           <div className="text-small">
@@ -131,7 +134,7 @@ export function Footer() {
                       </h2>
                     </div>
                     <h2 className="italic">
-                      with Nuvora
+                      with<br /> Interior Blinds & Shutters
                     </h2>
                   </div>
                   <div className="footer-image-box">
@@ -146,13 +149,15 @@ export function Footer() {
               </div>
               <div className="footer-bottom-box">
                 <div className="footer-bottom-content">
-                  © Made By
+                  © Made By &nbsp;
                   <a className="copyright-link" href="https://wrapmarket.com/" rel="noopener" target="_blank">
-                    Waida Studio
+                    GO2X
                   </a>
-                  -
+
+                  .
+
                   <a className="copyright-link" href="/license">
-                    License
+                    Agency&nbsp;
                   </a>
                   | Powered By
                 </div>

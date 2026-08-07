@@ -142,6 +142,40 @@ export function NuvoraScripts() {
       return () => observer.disconnect();
     }
 
+    /* ------------------------------------------ homepage FAQ hover accordion */
+    function initFaqHover() {
+      const rows = $$<HTMLDetailsElement>(".faq-row");
+      if (!rows.length) return () => {};
+
+      const canHover = window.matchMedia("(hover: hover) and (pointer: fine)");
+      const cleanups = rows.map((row) => {
+        const summary = $<HTMLElement>(".faq-summary", row);
+        const open = () => {
+          if (canHover.matches) row.open = true;
+        };
+        const close = () => {
+          if (!canHover.matches) return;
+          row.open = false;
+          if (document.activeElement === summary) summary?.blur();
+        };
+        const preventPointerToggle = (event: MouseEvent) => {
+          if (canHover.matches && event.detail > 0) event.preventDefault();
+        };
+
+        row.addEventListener("pointerenter", open);
+        row.addEventListener("pointerleave", close);
+        summary?.addEventListener("click", preventPointerToggle);
+
+        return () => {
+          row.removeEventListener("pointerenter", open);
+          row.removeEventListener("pointerleave", close);
+          summary?.removeEventListener("click", preventPointerToggle);
+        };
+      });
+
+      return () => cleanups.forEach((cleanup) => cleanup());
+    }
+
     /* -------------------------------------------- hamburger full-screen menu */
     function initNav() {
       const overlay = $<HTMLElement>(".open-menu");
@@ -420,7 +454,7 @@ export function NuvoraScripts() {
     }
 
     /* ============================================================ CART (LS) */
-    const CART_KEY = "nuvora:cart:v1";
+    const CART_KEY = "Nuvora:cart:v1";
     type CartItem = { id: string; name: string; price: string; img: string; qty: number };
     const Cart = {
       read(): CartItem[] {
@@ -565,7 +599,7 @@ export function NuvoraScripts() {
     (window as unknown as { NuvoraCart: typeof Cart }).NuvoraCart = Cart;
 
     /* ------------------------------------------------- checkout / confirmation */
-    const ORDER_KEY = "nuvora:order:v1";
+    const ORDER_KEY = "Nuvora:order:v1";
     function renderOrderSummary(items: CartItem[]) {
       const list = $<HTMLElement>(".wf-commerce-commercecheckoutorderitemslist");
       if (list) {
@@ -634,6 +668,7 @@ export function NuvoraScripts() {
     const destroyReveal = initReveal();
     const destroyWindowStoryScroll = initWindowStoryScroll();
     const destroyMotionPerformance = initMotionPerformance();
+    const destroyFaqHover = initFaqHover();
     initNav();
     initTabs();
     initCounters();
@@ -648,6 +683,7 @@ export function NuvoraScripts() {
       destroyReveal();
       destroyWindowStoryScroll();
       destroyMotionPerformance();
+      destroyFaqHover();
     };
   }, []);
 

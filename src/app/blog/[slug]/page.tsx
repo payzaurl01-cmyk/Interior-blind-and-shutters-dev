@@ -67,11 +67,11 @@ export default async function BlogPostPage({
               <div className="blog-single-author-flex">
                 <div className="blog-single-author-box">
                   <div className="secondary-text-regular">Published Date</div>
-                  <h2 className="blog-single-author-content">{post.author}</h2>
+                  <h2 className="blog-single-author-content">{post.date}</h2>
                 </div>
                 <div className="blog-single-author-box">
-                  <div className="secondary-text-regular">Autor Name</div>
-                  <h2 className="blog-single-author-content">{post.date}</h2>
+                  <div className="secondary-text-regular">Author Name</div>
+                  <h2 className="blog-single-author-content">{post.author}</h2>
                 </div>
                 <div className="blog-single-author-box">
                   <div className="secondary-text-regular">Estimate Time</div>

@@ -1,5 +1,5 @@
 {
-  "name": "nuvora",
+  "name": "Nuvora",
   "version": "1.0.0",
   "private": true,
   "description": "Nuvora — sustainable architecture & real estate template built with Next.js 16 + React 19 + TypeScript.",
@@ -13,6 +13,9 @@
     "node": ">=20"
   },
   "dependencies": {
+    "@keystatic/core": "^0.6.4",
+    "@keystatic/next": "^5.0.4",
+    "@markdoc/markdoc": "^0.5.9",
     "@tailwindcss/postcss": "^4.3.3",
     "gray-matter": "^4.0.3",
     "next": "^16.0.0",

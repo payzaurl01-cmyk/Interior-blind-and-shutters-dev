@@ -45,7 +45,7 @@ export default function AboutPage() {
                       <span className="opacity-zero is-at">
                         0000000
                       </span>
-                      AT NUVORA WE DON’T JUST BUY AND SELL PROPERTIES - WE BUILD LASTING RELATIONSHIPS AND TURN DREAMS INTO ADDRESSES. AND FOUNDED WITH  A VISION TO ELAVAE THE REAL ESTATE EXPERIENCE WE ARE PROFESSIONAL
+                      AT Nuvora WE DON’T JUST BUY AND SELL PROPERTIES - WE BUILD LASTING RELATIONSHIPS AND TURN DREAMS INTO ADDRESSES. AND FOUNDED WITH  A VISION TO ELAVAE THE REAL ESTATE EXPERIENCE WE ARE PROFESSIONAL
                     </h2>
                   </div>
                 </div>
