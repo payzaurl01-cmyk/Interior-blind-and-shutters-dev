@@ -4,7 +4,7 @@ Sustainable architecture & real estate template, converted from the original sta
 HTML template to **Next.js 16** (App Router) + **React 19** + **TypeScript**. Every
 page is faithful to the source design and prerenders to static HTML.
 
-**Live demo:** https://nuvora-nextjs.vercel.app/
+**Live demo:** https://Nuvora-nextjs.vercel.app/
 
 ## Requirements
 
@@ -28,7 +28,7 @@ npm run typecheck  # TypeScript check
   utility framework, no build-time CSS pipeline.
 - The original markup and class names are reproduced inside React components, so
   every page matches the source pixel-for-pixel.
-- All interactivity is a single client component, `src/components/nuvora-scripts.tsx`,
+- All interactivity is a single client component, `src/components/Nuvora-scripts.tsx`,
   porting the template's original `main.js`: scroll reveal, full-screen hamburger
   menu, testimonial tabs, slot-roll counters, the image/video lightbox, blog
   category filter, custom checkboxes, autoplay video, and a `localStorage` cart with

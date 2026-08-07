@@ -262,7 +262,7 @@
   }
 
   /* ============================================================ CART (LS) */
-  var CART_KEY = "nuvora:cart:v1";
+  var CART_KEY = "Nuvora:cart:v1";
   var Cart = {
     read: function () { try { return JSON.parse(localStorage.getItem(CART_KEY)) || []; } catch (e) { return []; } },
     write: function (items) { localStorage.setItem(CART_KEY, JSON.stringify(items)); this.render(); },
@@ -328,7 +328,7 @@
   window.NuvoraCart = Cart;
 
   /* ------------------------------------------------- checkout / confirmation */
-  var ORDER_KEY = "nuvora:order:v1";
+  var ORDER_KEY = "Nuvora:order:v1";
   function renderOrderSummary(items) {
     var list = $(".wf-commerce-commercecheckoutorderitemslist");
     if (list) {

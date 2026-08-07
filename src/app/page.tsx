@@ -5,7 +5,6 @@ export default function HomePage() {
         <div className="container">
           <div className="hero-wrap hero-home-wrap">
             <div className="hero-home-content reveal">
-              <p className="hero-kicker">MADE-TO-MEASURE WINDOW FURNISHINGS</p>
               <h1 className="hero-white-title home-hero-title">
                 <span>Beautiful light.</span>
                 <span>Better privacy.</span>
@@ -49,7 +48,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="visual-wrap">
-          <img alt="" className="visual hero-background-image" decoding="async" fetchPriority="high" height="941" loading="eager" src="/assets/pic1-optimized.webp" width="1672" />
+          <img alt="" className="visual hero-background-image" loading="eager" src="/assets/pic1.png" />
           <div className="visual-overlay hero-overlay" />
         </div>
             </section>
@@ -57,9 +56,6 @@ export default function HomePage() {
               <div className="container">
                 <div className="hero-about-wrap window-collection-wrap">
                   <div className="window-collection-header">
-                    <p className="window-collection-kicker reveal">
-                      OUR WINDOW COLLECTION
-                    </p>
                     <h2 className="window-collection-title reveal">
                       <span>These aren’t just</span>
                       <span>blinds.</span>
@@ -157,7 +153,7 @@ export default function HomePage() {
                     </figure>
                   </div>
                   <div className="window-story-content">
-                    <p className="window-story-kicker reveal">DESIGNED AROUND REAL LIFE</p>
+                    {/* <p className="window-story-kicker reveal">DESIGNED AROUND REAL LIFE</p> */}
                     <h2 className="window-story-title reveal" id="window-story-title">
                       <span>Control the day</span>
                       <span className="italic none">without closing it out.</span>
@@ -181,7 +177,7 @@ export default function HomePage() {
                 <div className="window-story-projects">
                   <div className="window-story-project-heading">
                     <div>
-                      <p className="window-story-kicker reveal">INSTALLED PROJECT SHOWCASE</p>
+                      {/* <p className="window-story-kicker reveal">INSTALLED PROJECT SHOWCASE</p> */}
                       <h2 className="window-story-title window-story-project-title reveal">
                         <span>A finish that belongs</span>
                         <span className="italic none">in the room.</span>
@@ -401,24 +397,24 @@ export default function HomePage() {
                   <div className="achievement-text-block">
                     <div className="inner-title-box inner-achievements reveal">
                       <h2 className="inner-title white">
-                        TURNING AMBITION TO SUCCESS and
+                        BEAUTIFULLY STYLED WINDOWS FOR EVERY
                         <span className="italic">
-                          achievements
+                          HOME
                         </span>
                       </h2>
                     </div>
                     <div className="achievements-description-box reveal">
                       <p className="secondary-text-regular">
-                        Every property we design or represent is a one-of-a-kind expression of our client’s vision. From serene countryside estates to purpose-built equestrian retreats, we are committed to crafting distinctive.
+                        From made-to-measure blinds to beautifully crafted shutters, we help you find the right finish for privacy, light control and timeless style in every room.
                       </p>
                       <div className="inner-button-box reveal">
                         <a className="primary-button inline-block" href="/contact">
                           <div className="primary-button-text-wrap">
                             <div className="primary-button-text">
-                              GET CONSULTATION
+                              BOOK A FREE MEASURE
                             </div>
                             <div className="primary-button-hover-text">
-                              GET CONSULTATION
+                              BOOK A FREE MEASURE
                             </div>
                           </div>
                         </a>
@@ -445,10 +441,10 @@ export default function HomePage() {
                             </div>
                             <div className="achievement-card-description">
                               <h3 className="achievements-card-name">
-                                BAY HEIGHTS
+                                ROLLER BLINDS
                               </h3>
                               <div className="description achievements">
-                                Wake up to sea breezes and sunset views in a gated
+                                A clean, versatile choice for simple light control and a modern finish.
                               </div>
                             </div>
                             <div className="secondary-text-regular text-primary">
@@ -474,10 +470,10 @@ export default function HomePage() {
                             </div>
                             <div className="achievement-card-description">
                               <h3 className="achievements-card-name">
-                                GROVE HOUSING
+                                WOODEN SHUTTERS
                               </h3>
                               <div className="description achievements">
-                                Nature-Inspired Living and Minutes from the City
+                                Timeless shutters that add privacy, character and a beautifully tailored look.
                               </div>
                             </div>
                             <div className="secondary-text-regular text-primary">
@@ -503,10 +499,10 @@ export default function HomePage() {
                             </div>
                             <div className="achievement-card-description">
                               <h3 className="achievements-card-name">
-                                HAVENOINT LIVING
+                                VENETIAN BLINDS
                               </h3>
                               <div className="description achievements">
-                                A luxury residential platform curated homes and serene getaway estates.
+                                Practical and stylish blinds designed to balance privacy and natural light.
                               </div>
                             </div>
                             <div className="secondary-text-regular text-primary">
@@ -986,34 +982,34 @@ export default function HomePage() {
                 <div className="benefit-card-block">
                   <div className="benefit-card one">
                     <h2 className="benefit-card-title">
-                      Verified Listings!
+                      Free Measure &amp; Quote!
                     </h2>
                     <div className="benefit-card-text">
-                      Tap into our know-how and negotiation hacks to make smart choices and score awesome results.
+                      Book a free home visit for expert measuring, style advice and a clear no-obligation quote.
                     </div>
                   </div>
                   <div className="benefit-card two">
                     <h2 className="benefit-card-title">
-                      Expert Help!
+                      Made-to-Measure Blinds!
                     </h2>
                     <div className="benefit-card-text">
-                      Use our market savvy and negotiation tricks to make smart decisions and snag the best outcomes.
+                      Discover roller, Roman, Venetian and more, custom fitted to suit your windows and your style.
                     </div>
                   </div>
                   <div className="benefit-card three">
                     <h2 className="benefit-card-title">
-                      Pro Support!
+                      Custom Shutters!
                     </h2>
                     <div className="benefit-card-text">
-                      Get the right support and handy negotiation tips to help you make smart choices and achieve great results.
+                      Add timeless style, privacy and light control with beautifully crafted shutters made for your home.
                     </div>
                   </div>
                   <div className="benefit-card four">
                     <h2 className="benefit-card-title">
-                      Trusted Know-How!
+                      Expert Fitting!
                     </h2>
                     <div className="benefit-card-text">
-                      Leverage our industry insights and negotiation skills to make smart choices and get amazing results.
+                      From consultation to installation, our team makes upgrading your blinds and shutters simple and stress-free.
                     </div>
                   </div>
                 </div>
@@ -1026,20 +1022,19 @@ export default function HomePage() {
                     <div className="inner-title-wrap results">
                       <div className="inner-title-box is-result reveal">
                         <h2 className="inner-title">
-                          Expert Services AND Exceptional
-                          <span className="italic">
-                            Results
-                          </span>
+                          EVERYTHING YOU NEED
+                          <span>TO KNOW</span>
+                          <span className="italic">BEFORE YOU CHOOSE</span>
                         </h2>
                       </div>
                       <div className="inner-button-box reveal">
                         <a className="primary-button inline-block" href="/contact">
                           <div className="primary-button-text-wrap">
                             <div className="primary-button-text">
-                              GET IN TOUCH
+                              BOOK A FREE MEASURE
                             </div>
                             <div className="primary-button-hover-text">
-                              GET IN TOUCH
+                              BOOK A FREE MEASURE
                             </div>
                           </div>
                         </a>
@@ -1047,152 +1042,47 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div>
-                    <div className="result-right-box" role="list">
-                      <div role="listitem">
-                        <a className="results-single-wrap inline-block" href="/service/commercial-sales-leasing">
-                          <div className="results-single-flex">
-                            <div className="result-card-left-box">
-                              <div className="result-card-title-box">
-                                <h3 className="result-card-title">
-                                  COMMERCIAL SALES &amp; LEASING
-                                </h3>
-                                <div className="result-card-number">
-                                  01
-                                </div>
-                              </div>
-                              <div className="result-card-image-box reveal">
-                                <img alt="" className="result-card-image" loading="lazy" src="/assets/images/68589d78cb772959e14979c7_result-3.jpg" />
-                              </div>
-                            </div>
-                            <div className="result-icon-box">
-                              <img alt="" className="result-icon" loading="lazy" src="/assets/images/result.svg" />
-                              <img alt="" className="result-icon" loading="lazy" src="/assets/images/result.svg" />
-                            </div>
-                          </div>
-                          <div className="result-card-divider-wrap">
-                            <div className="blog-card-divider" style={{ width: "100%" }}>
-                            </div>
-                            <div className="blog-card-divider-hover" style={{ width: "0%" }}>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div role="listitem">
-                        <a className="results-single-wrap inline-block" href="/service/construction-renovation">
-                          <div className="results-single-flex">
-                            <div className="result-card-left-box">
-                              <div className="result-card-title-box">
-                                <h3 className="result-card-title">
-                                  CONSTRUCTION &amp; RENOVATION
-                                </h3>
-                                <div className="result-card-number">
-                                  02
-                                </div>
-                              </div>
-                              <div className="result-card-image-box reveal">
-                                <img alt="" className="result-card-image" loading="lazy" src="/assets/images/68589d12aa21fa380b5fd7e2_result-1.jpg" />
-                              </div>
-                            </div>
-                            <div className="result-icon-box">
-                              <img alt="" className="result-icon" loading="lazy" src="/assets/images/result.svg" />
-                              <img alt="" className="result-icon" loading="lazy" src="/assets/images/result.svg" />
-                            </div>
-                          </div>
-                          <div className="result-card-divider-wrap">
-                            <div className="blog-card-divider" style={{ width: "100%" }}>
-                            </div>
-                            <div className="blog-card-divider-hover" style={{ width: "0%" }}>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div role="listitem">
-                        <a className="results-single-wrap inline-block" href="/service/home-staging-marketing">
-                          <div className="results-single-flex">
-                            <div className="result-card-left-box">
-                              <div className="result-card-title-box">
-                                <h3 className="result-card-title">
-                                  HOME STAGING &amp; MARKETING
-                                </h3>
-                                <div className="result-card-number">
-                                  03
-                                </div>
-                              </div>
-                              <div className="result-card-image-box reveal">
-                                <img alt="" className="result-card-image" loading="lazy" src="/assets/images/68589db035cada08750b40cd_result-4.jpg" />
-                              </div>
-                            </div>
-                            <div className="result-icon-box">
-                              <img alt="" className="result-icon" loading="lazy" src="/assets/images/result.svg" />
-                              <img alt="" className="result-icon" loading="lazy" src="/assets/images/result.svg" />
-                            </div>
-                          </div>
-                          <div className="result-card-divider-wrap">
-                            <div className="blog-card-divider" style={{ width: "100%" }}>
-                            </div>
-                            <div className="blog-card-divider-hover" style={{ width: "0%" }}>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div role="listitem">
-                        <a className="results-single-wrap inline-block" href="/service/interior-design-services">
-                          <div className="results-single-flex">
-                            <div className="result-card-left-box">
-                              <div className="result-card-title-box">
-                                <h3 className="result-card-title">
-                                  INTERIOR DESIGN SERVICES
-                                </h3>
-                                <div className="result-card-number">
-                                  04
-                                </div>
-                              </div>
-                              <div className="result-card-image-box reveal">
-                                <img alt="" className="result-card-image" loading="lazy" src="/assets/images/68589d4c1f76257ee5e18cc9_result-2.jpg" />
-                              </div>
-                            </div>
-                            <div className="result-icon-box">
-                              <img alt="" className="result-icon" loading="lazy" src="/assets/images/result.svg" />
-                              <img alt="" className="result-icon" loading="lazy" src="/assets/images/result.svg" />
-                            </div>
-                          </div>
-                          <div className="result-card-divider-wrap">
-                            <div className="blog-card-divider" style={{ width: "100%" }}>
-                            </div>
-                            <div className="blog-card-divider-hover" style={{ width: "0%" }}>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div role="listitem">
-                        <a className="results-single-wrap inline-block" href="/service/rental-leasing-service">
-                          <div className="results-single-flex">
-                            <div className="result-card-left-box">
-                              <div className="result-card-title-box">
-                                <h3 className="result-card-title">
-                                  RENTAL &amp; LEASING SERVICE
-                                </h3>
-                                <div className="result-card-number">
-                                  05
-                                </div>
-                              </div>
-                              <div className="result-card-image-box reveal">
-                                <img alt="" className="result-card-image" loading="lazy" src="/assets/images/68589dcee31d040ea994b7bd_result-5.jpg" />
-                              </div>
-                            </div>
-                            <div className="result-icon-box">
-                              <img alt="" className="result-icon" loading="lazy" src="/assets/images/result.svg" />
-                              <img alt="" className="result-icon" loading="lazy" src="/assets/images/result.svg" />
-                            </div>
-                          </div>
-                          <div className="result-card-divider-wrap">
-                            <div className="blog-card-divider" style={{ width: "100%" }}>
-                            </div>
-                            <div className="blog-card-divider-hover" style={{ width: "0%" }}>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
+                    <div className="result-right-box faq-list" role="list">
+                      <details className="faq-row" role="listitem">
+                        <summary className="faq-summary">
+                          <span className="faq-number">01</span>
+                          <span className="faq-question">HOW DOES THE FREE MEASURE &amp; QUOTE WORK?</span>
+                          <span className="faq-toggle" aria-hidden="true">+</span>
+                        </summary>
+                        <div className="faq-answer"><p>We’ll visit your home, measure your windows and talk through the styles, colours and finishes that suit your space. You’ll then receive a clear, no-obligation quote.</p></div>
+                      </details>
+                      <details className="faq-row" role="listitem">
+                        <summary className="faq-summary">
+                          <span className="faq-number">02</span>
+                          <span className="faq-question">WHICH BLINDS &amp; SHUTTERS ARE RIGHT FOR MY HOME?</span>
+                          <span className="faq-toggle" aria-hidden="true">+</span>
+                        </summary>
+                        <div className="faq-answer"><p>Every room is different. We’ll help you compare the best options for privacy, light control and style, so choosing feels simple.</p></div>
+                      </details>
+                      <details className="faq-row" role="listitem">
+                        <summary className="faq-summary">
+                          <span className="faq-number">03</span>
+                          <span className="faq-question">ARE YOUR BLINDS &amp; SHUTTERS MADE TO MEASURE?</span>
+                          <span className="faq-toggle" aria-hidden="true">+</span>
+                        </summary>
+                        <div className="faq-answer"><p>Yes. Every blind and shutter is tailored to your windows for a precise fit and a beautifully finished look.</p></div>
+                      </details>
+                      <details className="faq-row" role="listitem">
+                        <summary className="faq-summary">
+                          <span className="faq-number">04</span>
+                          <span className="faq-question">DO YOU PROVIDE PROFESSIONAL FITTING?</span>
+                          <span className="faq-toggle" aria-hidden="true">+</span>
+                        </summary>
+                        <div className="faq-answer"><p>Absolutely. Our experienced fitters take care of the installation, making sure everything looks right and works exactly as it should.</p></div>
+                      </details>
+                      <details className="faq-row" role="listitem">
+                        <summary className="faq-summary">
+                          <span className="faq-number">05</span>
+                          <span className="faq-question">HOW LONG DOES THE WHOLE PROCESS TAKE?</span>
+                          <span className="faq-toggle" aria-hidden="true">+</span>
+                        </summary>
+                        <div className="faq-answer"><p>Timescales vary by product, but we’ll keep everything clear from your first measure through to final fitting, with no unnecessary surprises.</p></div>
+                      </details>
                     </div>
                   </div>
                 </div>

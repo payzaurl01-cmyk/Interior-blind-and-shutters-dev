@@ -17,9 +17,10 @@ export function Header() {
           <div className="navbar-wrapper">
             <div className="nav-content-wrap">
               <a aria-current="page" className="nav-logo-wrap inline-block" href="/">
-
-                <p className="nav-logo-text text-white">Interior blind and shutters</p>
-                <img alt="Nav Logo" className="nav-logo v2" loading="lazy" src="/assets/images/Nuvora-Black.svg" />
+                <span className="site-brand header-site-brand">
+                  <img alt="" className="site-brand-image" decoding="async" height="36" src="/assets/logo.jpeg" width="36" />
+                  <span className="site-brand-text">Interior Blinds &amp; Shutters</span>
+                </span>
               </a>
               <div className="nav-item-wrap">
                 <div className="nav-main-menu-wrap">
@@ -101,7 +102,10 @@ export function Header() {
         <div className="nav-menu-wrapper">
           <div className="close-menu-wrap">
             <div className="nav-menu-logo-box">
-              <img alt="" className="nav-menu-logo" loading="lazy" src="/assets/images/Nuvora-Black.svg" />
+              <span className="site-brand menu-site-brand">
+                <img alt="" className="site-brand-image" decoding="async" height="42" src="/assets/logo.jpeg" width="42" />
+                <span className="site-brand-text">Interior Blinds &amp; Shutters</span>
+              </span>
             </div>
             <div className="hamburger-menu close">
               <div className="hamburger-text-two">
