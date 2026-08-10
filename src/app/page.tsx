@@ -16,7 +16,7 @@ export default function HomePage() {
                 Custom blinds, shutters and curtains designed, measured and installed for the way you live.
               </p>
               <div className="hero-actions">
-                <a className="primary-button inline-block" href="/contact">
+                <a className="primary-button inline-block" href="#home-quote-section">
                   <div className="primary-button-text-wrap">
                     <div className="primary-button-text">Get a free measure &amp; quote</div>
                     <div className="primary-button-hover-text">Get a free measure &amp; quote</div>
@@ -301,7 +301,7 @@ export default function HomePage() {
                 </div>
               </div>
             </section>
-            <section className="section">
+            <section className="section projects-showcase-section">
               <div className="container">
                 <div className="inner-wrap">
                   <div className="inner-title-wrap flex">
@@ -340,7 +340,7 @@ export default function HomePage() {
                         <div role="listitem">
                           <div className="project-single-card reveal">
                             <div className="project-image-box">
-                              <img alt="Project Image" className="project-image" loading="lazy" src="/assets/images/693946e15934a20a63cf89bb_Project-Image--2-.webp" />
+                              <img alt="Project Image" className="project-image" loading="lazy" src="/assets/3pic/pexels-jibarofoto-14002100.jpg" />
                               <a className="view-project inline-block" href="/project/bay-heights">
                                 <img alt="" className="view-project-image" loading="lazy" src="/assets/images/arrow-black-right.svg" />
                               </a>
@@ -372,7 +372,7 @@ export default function HomePage() {
                         <div role="listitem">
                           <div className="project-single-card reveal">
                             <div className="project-image-box">
-                              <img alt="Project Image" className="project-image" loading="lazy" src="/assets/images/693946d6d4ea504d366dfc6b_Project-Image--1-.webp" />
+                              <img alt="Project Image" className="project-image" loading="lazy" src="/assets/3pic/pexels-marina-zvada-844583049-27396178.jpg" />
                               <a className="view-project inline-block" href="/project/grove-housin">
                                 <img alt="" className="view-project-image" loading="lazy" src="/assets/images/arrow-black-right.svg" />
                               </a>
@@ -404,7 +404,7 @@ export default function HomePage() {
                         <div role="listitem">
                           <div className="project-single-card reveal">
                             <div className="project-image-box">
-                              <img alt="Project Image" className="project-image" loading="lazy" src="/assets/images/693946c7167259b175db2866_Project-Image.webp" />
+                              <img alt="Project Image" className="project-image" loading="lazy" src="/assets/3pic/pexels-vi-t-anh-nguy-n-2150409023-34654506.jpg" />
                               <a className="view-project inline-block" href="/project/skyline-vista">
                                 <img alt="" className="view-project-image" loading="lazy" src="/assets/images/arrow-black-right.svg" />
                               </a>
@@ -441,132 +441,97 @@ export default function HomePage() {
                 </div>
               </div>
             </section>
-            <section className="section achievements">
-              <div className="container">
-                <div className="achievements-wrap">
-                  <div className="achievement-text-block">
-                    <div className="inner-title-box inner-achievements reveal">
-                      <h2 className="inner-title white">
-                        BEAUTIFULLY STYLED WINDOWS FOR EVERY
-                        <span className="italic">
-                          HOME
-                        </span>
-                      </h2>
-                    </div>
-                    <div className="achievements-description-box reveal">
-                      <p className="secondary-text-regular">
-                        From made-to-measure blinds to beautifully crafted shutters, we help you find the right finish for privacy, light control and timeless style in every room.
-                      </p>
-                      <div className="inner-button-box reveal">
-                        <a className="primary-button inline-block" href="/contact">
-                          <div className="primary-button-text-wrap">
-                            <div className="primary-button-text">
-                              BOOK A FREE MEASURE
-                            </div>
-                            <div className="primary-button-hover-text">
-                              BOOK A FREE MEASURE
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="achievements-grid" role="list">
-                      <div className="collection-item" role="listitem">
-                        <a className="achievements-card inline-block reveal" href="/project/bay-heights">
-                          <div className="achievements-card-image-box">
-                            <img alt="Achievement Image" className="achievements-card-image" loading="lazy" src="/assets/images/693946e15934a20a63cf89bb_Project-Image--2-.webp" />
-                          </div>
-                          <div className="achievements-content-box">
-                            <div className="project-card-number-box">
-                              <p className="project-card-number text-secondary">
-                                0/
-                              </p>
-                              <div className="text-dark">
-                                <p className="project-card-number">
-                                  1
-                                </p>
-                              </div>
-                            </div>
-                            <div className="achievement-card-description">
-                              <h3 className="achievements-card-name">
-                                ROLLER BLINDS
-                              </h3>
-                              <div className="description achievements">
-                                A clean, versatile choice for simple light control and a modern finish.
-                              </div>
-                            </div>
-                            <div className="secondary-text-regular text-primary">
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div className="collection-item" role="listitem">
-                        <a className="achievements-card inline-block reveal" href="/project/grove-housin">
-                          <div className="achievements-card-image-box">
-                            <img alt="Achievement Image" className="achievements-card-image" loading="lazy" src="/assets/images/693946d6d4ea504d366dfc6b_Project-Image--1-.webp" />
-                          </div>
-                          <div className="achievements-content-box">
-                            <div className="project-card-number-box">
-                              <p className="project-card-number text-secondary">
-                                0/
-                              </p>
-                              <div className="text-dark">
-                                <p className="project-card-number">
-                                  2
-                                </p>
-                              </div>
-                            </div>
-                            <div className="achievement-card-description">
-                              <h3 className="achievements-card-name">
-                                WOODEN SHUTTERS
-                              </h3>
-                              <div className="description achievements">
-                                Timeless shutters that add privacy, character and a beautifully tailored look.
-                              </div>
-                            </div>
-                            <div className="secondary-text-regular text-primary">
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div className="collection-item" role="listitem">
-                        <a className="achievements-card inline-block reveal" href="/project/havenoint-living">
-                          <div className="achievements-card-image-box">
-                            <img alt="Achievement Image" className="achievements-card-image" loading="lazy" src="/assets/images/6852e2c07dac4baf5afaef22_project-image-8.jpg" />
-                          </div>
-                          <div className="achievements-content-box">
-                            <div className="project-card-number-box">
-                              <p className="project-card-number text-secondary">
-                                0/
-                              </p>
-                              <div className="text-dark">
-                                <p className="project-card-number">
-                                  3
-                                </p>
-                              </div>
-                            </div>
-                            <div className="achievement-card-description">
-                              <h3 className="achievements-card-name">
-                                VENETIAN BLINDS
-                              </h3>
-                              <div className="description achievements">
-                                Practical and stylish blinds designed to balance privacy and natural light.
-                              </div>
-                            </div>
-                            <div className="secondary-text-regular text-primary">
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <section className="styled-windows-section" aria-labelledby="styled-windows-title">
+              <div className="styled-windows-backdrop" aria-hidden="true">
+                <img
+                  alt=""
+                  decoding="async"
+                  loading="lazy"
+                  src="/assets/styled-windows/background.webp"
+                />
               </div>
-              <div className="visual-wrap">
-                <img alt="" className="visual" loading="lazy" sizes="(max-width: 5760px) 100vw, 5760px, 100vw" src="/assets/images/Achievement-Image.webp" srcSet="/assets/images/Achievement-Image-p-500.webp 500w, /assets/images/Achievement-Image-p-800.webp 800w, /assets/images/Achievement-Image-p-1080.webp 1080w, /assets/images/Achievement-Image-p-1600.webp 1600w, /assets/images/Achievement-Image-p-2000.webp 2000w, /assets/images/Achievement-Image-p-2600.webp 2600w, /assets/images/Achievement-Image-p-3200.webp 3200w, /assets/images/Achievement-Image.webp 5760w" />
-                <div className="visual-overlay">
+              <div className="styled-windows-overlay" aria-hidden="true" />
+
+              <div className="styled-windows-shell">
+                <div className="styled-windows-heading-row">
+                  <h2 className="styled-windows-title reveal" id="styled-windows-title">
+                    <span>BEAUTIFULLY</span>
+                    <span>STYLED WINDOWS</span>
+                    <em>FOR EVERY HOME.</em>
+                  </h2>
+                  <p className="styled-windows-intro reveal">
+                    Explore window furnishings designed to enhance privacy, comfort, and style in every room.
+                  </p>
+                </div>
+
+                <div className="styled-windows-cards" role="list">
+                  <a className="styled-windows-card reveal" href="/contact" role="listitem">
+                    <span className="styled-windows-card-media">
+                      <img
+                        alt="Sheer curtains softly filtering daylight in a refined living room"
+                        decoding="async"
+                        height="1080"
+                        loading="lazy"
+                        src="/assets/styled-windows/more-privacy.webp"
+                        width="720"
+                      />
+                    </span>
+                    <span className="styled-windows-card-copy">
+                      <strong>More<br />Privacy</strong>
+                      <span>Keep your space private without sacrificing style.</span>
+                    </span>
+                  </a>
+
+                  <a className="styled-windows-card reveal" href="/contact" role="listitem">
+                    <span className="styled-windows-card-media">
+                      <img
+                        alt="White Venetian blinds controlling daylight in a modern dining room"
+                        decoding="async"
+                        height="1080"
+                        loading="lazy"
+                        src="/assets/styled-windows/better-light-control.webp"
+                        width="720"
+                      />
+                    </span>
+                    <span className="styled-windows-card-copy">
+                      <strong>Better<br />Light Control</strong>
+                      <span>Adjust natural light to suit your mood and daily routine.</span>
+                    </span>
+                  </a>
+
+                  <a className="styled-windows-card reveal" href="/contact" role="listitem">
+                    <span className="styled-windows-card-media">
+                      <img
+                        alt="Light-filtering cellular blinds above a softly upholstered sofa"
+                        decoding="async"
+                        height="1080"
+                        loading="lazy"
+                        src="/assets/styled-windows/cooler-rooms.webp"
+                        width="720"
+                      />
+                    </span>
+                    <span className="styled-windows-card-copy">
+                      <strong>Cooler<br />Rooms</strong>
+                      <span>Reduce heat and improve comfort all year round.</span>
+                    </span>
+                  </a>
+
+                  <a className="styled-windows-card reveal" href="/contact" role="listitem">
+                    <span className="styled-windows-card-media">
+                      <img
+                        alt="Motorised roller blind in a warm contemporary bedroom"
+                        decoding="async"
+                        height="1080"
+                        loading="lazy"
+                        src="/assets/styled-windows/motorised-blinds.webp"
+                        width="720"
+                      />
+                    </span>
+                    <span className="styled-windows-card-copy">
+                      <strong>Motorised<br />Blinds</strong>
+                      <span>Effortless control at the touch of a button.</span>
+                    </span>
+                  </a>
                 </div>
               </div>
             </section>
@@ -582,7 +547,7 @@ export default function HomePage() {
                     <p className="why-homeowners-copy">
                       Made-to-measure blinds and shutters, tailored to your space and style. Expert advice, professional fitting, and a local team you can rely on.
                     </p>
-                    <a className="primary-button inline-block" href="/contact">
+                    <a className="primary-button inline-block" href="#home-quote-section">
                       <div className="primary-button-text-wrap">
                         <div className="primary-button-text">
                           BOOK A FREE MEASURE
@@ -801,7 +766,7 @@ export default function HomePage() {
                         </div>
                       </div>
                     </div>
-                    <a className="benefit-step-button inline-block pt-8" href="/contact">
+                    <a className="benefit-step-button inline-block pt-8" href="#home-quote-section">
                       Step 1- Its Free
                     </a>
                   </div>
@@ -821,7 +786,7 @@ export default function HomePage() {
                         </h2>
                       </div>
                       <div className="inner-button-box reveal">
-                        <a className="primary-button inline-block" href="/contact">
+                        <a className="primary-button inline-block" href="#home-quote-section">
                           <div className="primary-button-text-wrap">
                             <div className="primary-button-text">
                               BOOK A FREE MEASURE

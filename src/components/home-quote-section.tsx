@@ -16,7 +16,7 @@ export function HomeQuoteSection() {
   }
 
   return (
-    <section className="home-quote-section" aria-labelledby="home-quote-title">
+    <section className="home-quote-section" id="home-quote-section" aria-labelledby="home-quote-title">
       <div className="home-quote-container">
         <div className="home-quote-content reveal">
           <p className="home-quote-kicker">LET’S GET STARTED</p>

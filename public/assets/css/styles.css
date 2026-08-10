@@ -6124,10 +6124,10 @@ blockquote {
 .benefit-step-button {
   color: var(--_colors---white);
   text-align: center;
-  background-color: var(--_colors---primary);
+  background-color: var(--_colors---primary-color);
   border-radius: 999px;
   min-width: 190px;
-  margin-top: 18px;
+  margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
   padding: 12px 24px;
