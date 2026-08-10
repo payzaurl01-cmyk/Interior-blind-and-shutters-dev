@@ -1,3 +1,5 @@
+import { HomeQuoteSection } from "@/components/home-quote-section";
+
 export default function HomePage() {
   return (
     <>
@@ -48,7 +50,18 @@ export default function HomePage() {
           </div>
         </div>
         <div className="visual-wrap">
-          <img alt="" className="visual hero-background-image" loading="eager" src="/assets/pic1.png" />
+          <video
+            aria-hidden="true"
+            autoPlay
+            className="visual hero-background-image hero-background-video"
+            loop
+            muted
+            playsInline
+            poster="/assets/pic1.png"
+            preload="metadata"
+          >
+            <source src="/assets/hero-video.mp4" type="video/mp4" />
+          </video>
           <div className="visual-overlay hero-overlay" />
         </div>
             </section>
@@ -190,12 +203,24 @@ export default function HomePage() {
                     </a>
                   </div>
                   <div className="window-story-brand-row reveal" aria-label="Trusted material brands">
-                    <span>SHAW</span>
-                    <span>Texstyle</span>
-                    <span>Vertex</span>
-                    <span>Nettex<sup>®</sup></span>
-                    <span>Hoad</span>
-                    <span>Louvolite<sup>®</sup></span>
+                    <div className="window-story-brand-track">
+                      <div className="window-story-brand-group">
+                        <span>SHAW</span>
+                        <span>Texstyle</span>
+                        <span>Vertex</span>
+                        <span>Nettex<sup>®</sup></span>
+                        <span>Hoad</span>
+                        <span>Louvolite<sup>®</sup></span>
+                      </div>
+                      <div className="window-story-brand-group" aria-hidden="true">
+                        <span>SHAW</span>
+                        <span>Texstyle</span>
+                        <span>Vertex</span>
+                        <span>Nettex<sup>®</sup></span>
+                        <span>Hoad</span>
+                        <span>Louvolite<sup>®</sup></span>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -587,19 +612,19 @@ export default function HomePage() {
                         <p>Materials &amp; Finish</p>
                       </div>
                       <div className="why-homeowners-cell why-homeowners-stat reveal">
-                        <strong>4.9</strong>
+                        <strong data-count-decimals="1" data-count-to="4.9">4.9</strong>
                         <span>Google Rating</span>
                       </div>
                       <div className="why-homeowners-cell why-homeowners-stat reveal">
-                        <strong>500+</strong>
+                        <strong data-count-suffix="+" data-count-to="500">500+</strong>
                         <span>Homes Completed</span>
                       </div>
                       <div className="why-homeowners-cell why-homeowners-stat reveal">
-                        <strong>10+</strong>
+                        <strong data-count-suffix="+" data-count-to="10">10+</strong>
                         <span>Years Experience</span>
                       </div>
                       <div className="why-homeowners-cell why-homeowners-stat reveal">
-                        <strong>1,500+</strong>
+                        <strong data-count-suffix="+" data-count-to="1500">1,500+</strong>
                         <span>Windows Fitted</span>
                       </div>
                     </div>
@@ -856,6 +881,7 @@ export default function HomePage() {
                 </div>
               </div>
             </section>
+            <HomeQuoteSection />
             <section className="section inner-blog">
               <div className="container">
                 <div className="inner-wrap">

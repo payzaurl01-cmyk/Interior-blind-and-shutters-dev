@@ -296,6 +296,98 @@ export function NuvoraScripts() {
       roll();
     }
 
+    /* ------------------------------------- why-homeowners count-up metrics */
+    function initHomeownerCounters() {
+      const counters = $$<HTMLElement>(".why-homeowners-stat [data-count-to]");
+      if (!counters.length) return () => {};
+
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const activeFrames = new Map<HTMLElement, number>();
+      const formatters = new Map<number, Intl.NumberFormat>();
+
+      function formatValue(value: number, decimals: number, suffix: string) {
+        if (!formatters.has(decimals)) {
+          formatters.set(
+            decimals,
+            new Intl.NumberFormat("en-AU", {
+              minimumFractionDigits: decimals,
+              maximumFractionDigits: decimals,
+            }),
+          );
+        }
+        return formatters.get(decimals)!.format(value) + suffix;
+      }
+
+      function getCounterSettings(counter: HTMLElement) {
+        return {
+          target: Number(counter.dataset.countTo || 0),
+          decimals: Number(counter.dataset.countDecimals || 0),
+          suffix: counter.dataset.countSuffix || "",
+        };
+      }
+
+      function finish(counter: HTMLElement) {
+        const { target, decimals, suffix } = getCounterSettings(counter);
+        counter.textContent = formatValue(target, decimals, suffix);
+      }
+
+      if (reducedMotion || !("IntersectionObserver" in window)) {
+        counters.forEach(finish);
+        return () => {};
+      }
+
+      function animate(counter: HTMLElement) {
+        const { target, decimals, suffix } = getCounterSettings(counter);
+        const startValue = Math.min(1, target);
+        const duration = 1500;
+        const startedAt = performance.now();
+
+        function update(now: number) {
+          const progress = Math.min((now - startedAt) / duration, 1);
+          const easedProgress = 1 - Math.pow(1 - progress, 3);
+          const rawValue = startValue + (target - startValue) * easedProgress;
+          const value = decimals ? rawValue : Math.floor(rawValue);
+          counter.textContent = formatValue(value, decimals, suffix);
+
+          if (progress < 1) {
+            const frame = window.requestAnimationFrame(update);
+            activeFrames.set(counter, frame);
+          } else {
+            activeFrames.delete(counter);
+            finish(counter);
+          }
+        }
+
+        const frame = window.requestAnimationFrame(update);
+        activeFrames.set(counter, frame);
+      }
+
+      counters.forEach((counter) => {
+        const { target, decimals, suffix } = getCounterSettings(counter);
+        counter.textContent = formatValue(Math.min(1, target), decimals, suffix);
+      });
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const counter = entry.target as HTMLElement;
+            observer.unobserve(counter);
+            animate(counter);
+          });
+        },
+        { rootMargin: "0px 0px -10% 0px", threshold: 0.35 },
+      );
+
+      counters.forEach((counter) => observer.observe(counter));
+
+      return () => {
+        observer.disconnect();
+        activeFrames.forEach((frame) => window.cancelAnimationFrame(frame));
+        activeFrames.clear();
+      };
+    }
+
     /* -------------------------------------------------------------- lightbox */
     function initLightbox() {
       const anchors = $$<HTMLAnchorElement>("a[data-lightbox]").filter(
@@ -672,6 +764,7 @@ export function NuvoraScripts() {
     initNav();
     initTabs();
     initCounters();
+    const destroyHomeownerCounters = initHomeownerCounters();
     initLightbox();
     initBlogFilter();
     initChecks();
@@ -684,6 +777,7 @@ export function NuvoraScripts() {
       destroyWindowStoryScroll();
       destroyMotionPerformance();
       destroyFaqHover();
+      destroyHomeownerCounters();
     };
   }, []);
 
