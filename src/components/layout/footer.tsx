@@ -40,7 +40,7 @@ export function Footer() {
               <div className="plan-divider" />
 
               <div className="footer-social-wrap">
-                <div className="small-text">SOCIAL</div>
+                <div className="small-text">SOCIAL MEDIA</div>
                 <div className="footer-social-box">
                   <a
                     aria-label="Instagram"
