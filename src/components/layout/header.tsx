@@ -35,6 +35,17 @@ export function Header() {
               </div>
             </div>
             <div className="nav-flex">
+              <details className="header-phone">
+                <summary className="header-phone-trigger" aria-label="Show phone number">
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.84.56 2.8.69A2 2 0 0 1 22 16.92Z" />
+                  </svg>
+                </summary>
+                <div className="header-phone-dropdown">
+                  <span>CALL US TODAY</span>
+                  <a href="tel:+61458822281">+61 458 822 281</a>
+                </div>
+              </details>
               <div className="hamburger-menu open">
                 <div className="hamburger-text">
                   Menu
@@ -82,7 +93,7 @@ export function Header() {
                 </div>
               </div>
               <div className="single-nav-menu">
-                <a className="nav-link-wrap inline-block" href={quoteHref}>
+                <a className="nav-link-wrap inline-block" href="tel:+61458822281">
                   <div className="nav-link-texts">
                     <div className="nav-link-text">
                       CONTACT
@@ -106,11 +117,14 @@ export function Header() {
                   Interior Blinds &amp; Shutters.
                 </div>
                 <div className="nav-social-icon-wrap">
-                  <a className="nav-social-icon-box inline-block" href="https://www.instagram.com/">
+                  <a aria-label="Instagram" className="nav-social-icon-box inline-block" href="https://www.instagram.com/interiorblindsandshutters?utm_source=qr" rel="noopener noreferrer" target="_blank">
                     <img alt="" className="nav-social-icon" loading="lazy" src="/assets/images/iconoir_instagram.svg" />
                   </a>
-                  <a className="nav-social-icon-box inline-block" href="https://dribbble.com/">
-                    <img alt="" className="nav-social-icon" loading="lazy" src="/assets/images/iconoir_dribbble.svg" />
+                  <a aria-label="Facebook" className="nav-social-icon-box inline-block" href="https://www.facebook.com/profile.php?id=100092455395096&amp;mibextid=LQQJ4d" rel="noopener noreferrer" target="_blank">
+                    <img alt="" className="nav-social-icon" loading="lazy" src="/assets/images/facebook.svg" />
+                  </a>
+                  <a aria-label="TikTok" className="nav-social-icon-box inline-block" href="https://www.tiktok.com/@interiorblindsandshutter?_t=8cHVXSJBb1N&amp;_r=1" rel="noopener noreferrer" target="_blank">
+                    <img alt="" className="nav-social-icon" loading="lazy" src="/assets/images/tiktok.svg" />
                   </a>
                 </div>
               </div>
