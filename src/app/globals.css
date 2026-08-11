@@ -344,3 +344,474 @@ html {
     transition: none;
   }
 }
+
+/* Homepage responsive refinements. Desktop styles intentionally remain unchanged. */
+@media (max-width: 991px) {
+  .home-page {
+    min-width: 0;
+    overflow-x: clip;
+  }
+
+  .home-page > .section,
+  .home-page > .styled-windows-section,
+  .home-page .container,
+  .home-page .hero-wrap,
+  .home-page .hero-home-content,
+  .home-page .inner-wrap,
+  .home-page .results-flex,
+  .home-page .why-homeowners-wrap,
+  .home-page .why-homeowners-left,
+  .home-page .why-homeowners-right {
+    min-width: 0;
+  }
+
+  .home-page .hero-home-content {
+    width: 100%;
+  }
+
+  .home-page .home-hero-title,
+  .home-page .home-hero-title span {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .home-page .hero-copy {
+    max-width: 34rem;
+  }
+
+  .home-page .projects-showcase-section .inner-project-wrap.is-desktop {
+    display: block;
+  }
+
+  .home-page .projects-showcase-section .inner-project-wrap.is-tablet {
+    display: none;
+  }
+
+  .home-page .why-homeowners-wrap {
+    gap: 56px;
+  }
+
+  .home-page .why-homeowners-left {
+    padding-top: 24px;
+  }
+
+  .home-page .why-homeowners-copy {
+    max-width: 38rem;
+  }
+
+  .home-page .why-homeowners-right {
+    width: 100%;
+  }
+
+  .home-page .result-feft-box {
+    max-width: 42rem;
+  }
+
+  .home-page .results-flex > div:last-child,
+  .home-page .result-right-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-page .section.hero-background {
+    min-height: 100svh;
+    padding-top: clamp(112px, 24vw, 138px);
+    padding-bottom: 20px;
+  }
+
+  .home-page .hero-background .hero-wrap {
+    min-height: calc(100svh - clamp(132px, 29vw, 158px));
+    gap: 48px;
+  }
+
+  .home-page .home-hero-title {
+    font-size: clamp(42px, 11.6vw, 56px);
+    line-height: .92;
+    letter-spacing: -.062em;
+  }
+
+  .home-page .home-hero-title .italic.none {
+    max-width: 9.6em;
+    font-size: .86em;
+    line-height: .94;
+  }
+
+  .home-page .hero-copy {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .home-page .hero-actions {
+    width: 100%;
+    margin-top: 22px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .home-page .hero-actions .primary-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-page .hero-range-link {
+    width: max-content;
+    min-height: 44px;
+    padding-top: 10px;
+  }
+
+  .home-page .hero-stats-card {
+    border-radius: 18px;
+  }
+
+  .home-page .hero-stat {
+    min-width: 0;
+  }
+
+  .home-page .window-product-card,
+  .home-page .styled-windows-card,
+  .home-page .project-single-card,
+  .home-page .blog-card,
+  .home-page .home-quote-panel,
+  .home-page .testimonial-tab-content {
+    transform-origin: center;
+  }
+
+  .home-page .window-card-arrow,
+  .home-page .view-project {
+    width: 64px;
+    height: 64px;
+  }
+
+  .home-page .window-story-list li {
+    align-items: flex-start;
+  }
+
+  .home-page .window-story-list li span {
+    flex: none;
+  }
+
+  .home-page .projects-showcase-section .inner-title-wrap.flex,
+  .home-page .inner-blog .inner-title-wrap.flex {
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .home-page .projects-showcase-section .project-collection-list {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page .projects-showcase-section .project-image-box {
+    aspect-ratio: 4 / 4.6;
+  }
+
+  .home-page .why-homeowners-wrap {
+    gap: 40px;
+    padding-top: 16px;
+  }
+
+  .home-page .why-homeowners-left {
+    padding-top: 0;
+  }
+
+  .home-page .why-homeowners-title {
+    margin-bottom: 24px;
+    font-size: clamp(42px, 12vw, 58px);
+    overflow-wrap: anywhere;
+  }
+
+  .home-page .why-homeowners-title .italic {
+    margin-top: 10px;
+    font-size: .68em;
+  }
+
+  .home-page .why-homeowners-copy {
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .home-page .why-homeowners-grid {
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-page .why-homeowners-cell {
+    min-width: 0;
+    min-height: 142px;
+    padding: 28px 18px 24px;
+  }
+
+  .home-page .why-homeowners-reason h3 {
+    font-size: clamp(18px, 5.3vw, 24px);
+    overflow-wrap: anywhere;
+  }
+
+  .home-page .why-homeowners-reason p {
+    font-size: clamp(17px, 4.8vw, 22px);
+  }
+
+  .home-page .why-homeowners-stat strong {
+    font-size: clamp(48px, 15vw, 70px);
+  }
+
+  .home-page .why-homeowners-stat span {
+    font-size: 15px;
+  }
+
+  .home-page .testimonial-text-large {
+    font-size: clamp(20px, 5.8vw, 26px);
+    line-height: 1.28;
+  }
+
+  .home-page .testimonial-author-info {
+    min-width: 0;
+  }
+
+  .home-page .benefit-card-stack,
+  .home-page .benefit-card-block {
+    min-width: 0;
+  }
+
+  .home-page .benefit-card {
+    position: sticky;
+    top: 88px;
+    min-width: 0;
+  }
+
+  .home-page .benefit-card.one {
+    top: 88px;
+  }
+
+  .home-page .benefit-card.two {
+    top: 104px;
+  }
+
+  .home-page .benefit-card.three {
+    top: 120px;
+  }
+
+  .home-page .benefit-card.four {
+    top: 136px;
+  }
+
+  .home-page .benefit-card.five {
+    position: relative;
+  }
+
+  .home-page .result-right-box {
+    margin-top: 8px;
+    padding-inline: 0;
+  }
+
+  .home-page .faq-summary {
+    grid-template-columns: 24px minmax(0, 1fr) 28px;
+  }
+
+  .home-page .faq-answer p {
+    padding-right: 32px;
+    padding-left: 34px;
+  }
+}
+
+@media (max-width: 479px) {
+  .home-page .home-hero-title {
+    font-size: clamp(36px, 12.2vw, 52px);
+  }
+
+  .home-page .hero-copy {
+    font-size: 15px;
+  }
+
+  .home-page .hero-stats-card {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page .hero-stat {
+    padding: 17px 20px;
+  }
+
+  .home-page .hero-stat-value {
+    font-size: 24px;
+  }
+
+  .home-page .hero-stat-label {
+    font-size: 10px;
+  }
+
+  .home-page .window-collection-title,
+  .home-page .window-story-title {
+    font-size: clamp(36px, 11.5vw, 44px);
+  }
+
+  .home-page .window-product-card {
+    min-height: 410px;
+    aspect-ratio: auto;
+  }
+
+  .home-page .window-card-text {
+    max-width: calc(100% - 64px);
+  }
+
+  .home-page .styled-windows-section {
+    padding-inline: 14px;
+  }
+
+  .home-page .styled-windows-title {
+    font-size: clamp(34px, 11.2vw, 46px);
+  }
+
+  .home-page .styled-windows-card {
+    grid-template-columns: minmax(104px, 40%) minmax(0, 1fr);
+  }
+
+  .home-page .styled-windows-card-copy {
+    padding: 19px 13px 15px;
+  }
+
+  .home-page .why-homeowners-grid {
+    grid-template-columns: 1fr;
+    border-right: 1px solid rgba(6, 27, 58, .14);
+  }
+
+  .home-page .why-homeowners-cell:nth-child(even) {
+    border-left: 0;
+  }
+
+  .home-page .why-homeowners-cell {
+    min-height: 118px;
+  }
+
+  .home-page .why-homeowners-title {
+    font-size: clamp(36px, 12vw, 48px);
+  }
+
+  .home-page .testimonial-tabs-menu {
+    gap: 8px;
+  }
+
+  .home-page .testimonial-tab-link,
+  .home-page .testimonial-tab-link[aria-current="page"] {
+    width: 33.333%;
+    aspect-ratio: 1;
+  }
+
+  .home-page .testimonial-author-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .home-page .benefit-heading {
+    font-size: clamp(36px, 11.5vw, 44px);
+  }
+
+  .home-page .benefit-card.one,
+  .home-page .benefit-card.two,
+  .home-page .benefit-card.three,
+  .home-page .benefit-card.four,
+  .home-page .benefit-card.five {
+    position: sticky;
+  }
+
+  .home-page .benefit-card.five {
+    top: 152px;
+  }
+
+  .home-page .benefit-card {
+    padding: 24px 20px;
+  }
+
+  .home-page .benefit-card-block {
+    padding-bottom: 24px;
+  }
+
+  .home-page .benefit-step-button {
+    position: relative;
+    z-index: 2;
+    margin-top: 72px;
+  }
+
+  .home-page .faq-question {
+    font-size: 15px;
+  }
+
+  .home-page .faq-answer p {
+    padding-right: 12px;
+    padding-left: 34px;
+  }
+
+  .home-page .home-quote-title {
+    font-size: clamp(42px, 14vw, 56px);
+  }
+
+  .home-page .home-quote-panel {
+    min-width: 0;
+    padding-inline: 20px;
+  }
+
+  .home-page .home-quote-privacy {
+    text-align: center;
+  }
+
+  .home-page .inner-blog .inner-title-box,
+  .home-page .projects-showcase-section .inner-title-box {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 359px) {
+  .home-page .section.hero-background {
+    padding-top: 104px;
+  }
+
+  .home-page .home-hero-title {
+    font-size: 35px;
+  }
+
+  .home-page .hero-actions .primary-button {
+    padding-inline: 18px;
+  }
+
+  .home-page .hero-actions .primary-button-text,
+  .home-page .hero-actions .primary-button-hover-text {
+    font-size: 14px;
+  }
+
+  .home-page .styled-windows-card {
+    min-height: 150px;
+    grid-template-columns: 102px minmax(0, 1fr);
+  }
+
+  .home-page .styled-windows-card-copy strong {
+    font-size: 18px;
+  }
+
+  .home-page .styled-windows-card-copy > span {
+    font-size: 13px;
+  }
+
+  .home-page .window-card-arrow,
+  .home-page .view-project {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .home-page .window-product-card:active,
+  .home-page .styled-windows-card:active,
+  .home-page .project-single-card:active,
+  .home-page .why-homeowners-cell:active {
+    transform: translateY(-3px) scale(.995);
+  }
+
+  .home-page .window-product-card:active .window-product-image,
+  .home-page .styled-windows-card:active .styled-windows-card-media img,
+  .home-page .project-single-card:active .project-image {
+    transform: scale(1.035);
+  }
+}
