@@ -603,11 +603,11 @@ export default function HomePage() {
                   <h2 className="inner-title is-testimonial">
                     Testimonials
                     <span className="italic">
-                      From Our Clients
+                      From Our Customers
                     </span>
                   </h2>
                   <p>
-                    Real stories of growth and collaboration from our partners.
+                    Trusted by homeowners, designers and developers across the country.
                   </p>
                 </div>
                 <div className="testimonial-tabs tabs reveal">
@@ -629,20 +629,20 @@ export default function HomePage() {
                         <div className="testimonial-text-block">
                           <div className="testimonial-text-wrapper">
                             <p className="testimonial-text-large">
-                              “The collaboration exceeded our expectations, leading to innovative solutions that set us apart in the market. I couldn’t ask for a better partnership!”
+                              “The bedroom blinds have elevated our space completely. From light control to privacy, everything just works. The quality is unreal.”
                             </p>
                             <p className="testimonial-text-small">
-                              Their insights were invaluable, driving significant improvements in our customer engagement and sales metrics over a short period.
+                              Custom blackout blinds in master bedroom, Surrey, United Kingdom
                             </p>
                           </div>
                           <div className="testimonial-author-block">
                             <img alt="" className="testimonial-author" height="48" loading="lazy" sizes="(max-width: 479px) 100vw, 48px" src="/assets/images/Testimonial-Author-2.webp" srcSet="/assets/images/Testimonial-Author-2-p-500.webp 500w, /assets/images/Testimonial-Author-2-p-800.webp 800w, /assets/images/Testimonial-Author-2.webp 1044w" width="48" />
                             <div className="testimonial-author-info">
                               <p className="testimonial-text-small">
-                                Maria Gonzalez
+                                James L.
                               </p>
                               <p className="testimonial-text-xsmall">
-                                Chief Marketing Officer, EcoFashion Co.
+                                Homeowner
                               </p>
                             </div>
                           </div>
@@ -655,20 +655,20 @@ export default function HomePage() {
                         <div className="testimonial-text-block">
                           <div className="testimonial-text-wrapper">
                             <p className="testimonial-text-large">
-                              “Our brand really took off thanks to some cool strategies and awesome execution. I'm really impressed with how everything turned out and how smooth the partnership was!”
+                              “Our new roller blinds look beautifully clean and make every room feel more comfortable. The measuring and installation process was effortless from start to finish.”
                             </p>
                             <p className="testimonial-text-small">
-                              Working with them was a breeze, and the strategies they shared helped us grow for real in just a few months.
+                              Motorised roller blinds throughout the home, Richmond, United Kingdom
                             </p>
                           </div>
                           <div className="testimonial-author-block">
                             <img alt="" className="testimonial-author" height="48" loading="lazy" sizes="100vw" src="/assets/images/Testimonial-Author.webp" srcSet="/assets/images/Testimonial-Author-p-500.webp 500w, /assets/images/Testimonial-Author-p-800.webp 800w, /assets/images/Testimonial-Author.webp 1044w" width="48" />
                             <div className="testimonial-author-info">
                               <p className="testimonial-text-small">
-                                Anantaraya Putra
+                                Daniel M.
                               </p>
                               <p className="testimonial-text-xsmall">
-                                Director, Jambi Retail Group
+                                Homeowner
                               </p>
                             </div>
                           </div>
@@ -681,20 +681,20 @@ export default function HomePage() {
                         <div className="testimonial-text-block">
                           <div className="testimonial-text-wrapper">
                             <p className="testimonial-text-large">
-                              “Their approach was refreshing and transformative, paving the way for new opportunities that we hadn't considered before!”
+                              “The shutters have transformed the front of our home. They give us privacy without losing natural light, and the finish feels completely made for the space.”
                             </p>
                             <p className="testimonial-text-small">
-                              The support and expertise provided were instrumental in enhancing our brand visibility and outreach in the industry.
+                              Made-to-measure plantation shutters, Manchester, United Kingdom
                             </p>
                           </div>
                           <div className="testimonial-author-block">
                             <img alt="" className="testimonial-author" height="48" loading="lazy" sizes="100vw" src="/assets/images/Testimonial-Author-1.webp" srcSet="/assets/images/Testimonial-Author-1-p-500.webp 500w, /assets/images/Testimonial-Author-1-p-800.webp 800w, /assets/images/Testimonial-Author-1.webp 1044w" width="48" />
                             <div className="testimonial-author-info">
                               <p className="testimonial-text-small">
-                                James Lee
+                                Oliver T.
                               </p>
                               <p className="testimonial-text-xsmall">
-                                CEO, Tech Innovations Inc.
+                                Homeowner
                               </p>
                             </div>
                           </div>
