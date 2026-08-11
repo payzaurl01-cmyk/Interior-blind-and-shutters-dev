@@ -45,11 +45,29 @@ export function Footer() {
                   <a
                     aria-label="Instagram"
                     className="footer-social-link inline-block"
-                    href="https://www.instagram.com/"
+                    href="https://www.instagram.com/interiorblindsandshutters?utm_source=qr"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <img alt="" className="social-link-icon" loading="lazy" src="/assets/images/instagram.svg" />
+                  </a>
+                  <a
+                    aria-label="Facebook"
+                    className="footer-social-link inline-block"
+                    href="https://www.facebook.com/profile.php?id=100092455395096&amp;mibextid=LQQJ4d"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img alt="" className="social-link-icon" loading="lazy" src="/assets/images/facebook.svg" />
+                  </a>
+                  <a
+                    aria-label="TikTok"
+                    className="footer-social-link inline-block"
+                    href="https://www.tiktok.com/@interiorblindsandshutter?_t=8cHVXSJBb1N&amp;_r=1"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img alt="" className="social-link-icon" loading="lazy" src="/assets/images/tiktok.svg" />
                   </a>
                 </div>
               </div>

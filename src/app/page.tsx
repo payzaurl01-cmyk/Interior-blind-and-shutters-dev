@@ -853,9 +853,9 @@ export default function HomePage() {
                   <div className="inner-title-wrap flex">
                     <div className="inner-title-box inner-blog reveal">
                       <h2 className="inner-title">
-                        Real Estate &amp; Design Trends
+                        Window Furnishing Ideas
                         <span className="italic">
-                          delivering
+                          for inspired homes
                         </span>
                       </h2>
                     </div>
@@ -877,19 +877,19 @@ export default function HomePage() {
                       <div data-cat="design" role="listitem">
                         <div className="blog-card reveal">
                           <a className="blog-image-box inline-block" href="/blog/how-design-trends-shape-buyer-decisions">
-                            <img alt="Blog Image" className="blog-image" loading="lazy" src="/assets/images/6854e9e11a7ab92f3935bcaf_blog-5.jpg" />
+                            <img alt="Light-filtering blinds helping create a cooler, more comfortable room" className="blog-image" loading="lazy" src="/assets/styled-windows/cooler-rooms.webp" />
                           </a>
                           <a aria-label="Blog Link" className="blog-card-title-box inline-block" href="/blog/how-design-trends-shape-buyer-decisions">
                             <h3 className="blog-card-title">
-                              How Design Trends Shape Buyer Decisions
+                              How to Choose Blinds for a Cooler, More Comfortable Home
                             </h3>
                           </a>
                           <div className="blog-author-box">
                             <div className="blog-author-name">
-                              Feroz Christopher
+                              Interior Blinds &amp; Shutters
                             </div>
                             <div className="blog-author-date">
-                              Jun 20, 2025
+                              Aug 11, 2026
                             </div>
                           </div>
                           <div className="blog-card-divider-wrap">
@@ -903,19 +903,19 @@ export default function HomePage() {
                       <div data-cat="architect" role="listitem">
                         <div className="blog-card reveal">
                           <a className="blog-image-box inline-block" href="/blog/how-the-real-estate-market-is-evolving-in-2025">
-                            <img alt="Blog Image" className="blog-image" loading="lazy" src="/assets/images/68523d5f344342ceb9029b6b_blog-1.jpg" />
+                            <img alt="Sheer curtains providing privacy while softly filtering natural light" className="blog-image" loading="lazy" src="/assets/styled-windows/more-privacy.webp" />
                           </a>
                           <a aria-label="Blog Link" className="blog-card-title-box inline-block" href="/blog/how-the-real-estate-market-is-evolving-in-2025">
                             <h3 className="blog-card-title">
-                              How the Real Estate Market Is Evolving in 2025
+                              How to Add Privacy Without Losing Beautiful Natural Light
                             </h3>
                           </a>
                           <div className="blog-author-box">
                             <div className="blog-author-name">
-                              Thomas William
+                              Interior Blinds &amp; Shutters
                             </div>
                             <div className="blog-author-date">
-                              Jun 18, 2025
+                              Aug 08, 2026
                             </div>
                           </div>
                           <div className="blog-card-divider-wrap">
@@ -929,19 +929,19 @@ export default function HomePage() {
                       <div data-cat="design" role="listitem">
                         <div className="blog-card reveal">
                           <a className="blog-image-box inline-block" href="/blog/the-role-of-design-in-real-estate-development">
-                            <img alt="Blog Image" className="blog-image" loading="lazy" src="/assets/images/6858a1a81f76257ee5e2c379_blog-4.jpg" />
+                            <img alt="Motorised roller blinds fitted in a warm contemporary bedroom" className="blog-image" loading="lazy" src="/assets/styled-windows/motorised-blinds.webp" />
                           </a>
                           <a aria-label="Blog Link" className="blog-card-title-box inline-block" href="/blog/the-role-of-design-in-real-estate-development">
                             <h3 className="blog-card-title">
-                              The Role of Design in Real Estate Development
+                              Motorised Blinds: Effortless Comfort at the Touch of a Button
                             </h3>
                           </a>
                           <div className="blog-author-box">
                             <div className="blog-author-name">
-                              Emerson Lofer
+                              Interior Blinds &amp; Shutters
                             </div>
                             <div className="blog-author-date">
-                              Jun 20, 2025
+                              Aug 05, 2026
                             </div>
                           </div>
                           <div className="blog-card-divider-wrap">
