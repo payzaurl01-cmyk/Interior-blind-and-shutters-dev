@@ -2,7 +2,7 @@ import { HomeQuoteSection } from "@/components/home-quote-section";
 
 export default function HomePage() {
   return (
-    <>
+    <main className="home-page">
       <section className="section hero-background">
         <div className="container">
           <div className="hero-wrap hero-home-wrap">
@@ -957,6 +957,6 @@ export default function HomePage() {
                 </div>
               </div>
             </section>
-    </>
+    </main>
   );
 }
