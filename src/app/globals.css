@@ -414,6 +414,10 @@ html {
 }
 
 @media (max-width: 767px) {
+  .home-page #home-quote-section {
+    scroll-margin-top: -480px;
+  }
+
   .home-page .section.hero-background {
     min-height: 100svh;
     padding-top: clamp(112px, 24vw, 138px);
