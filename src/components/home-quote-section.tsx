@@ -1,18 +1,44 @@
 "use client";
 
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
 export function HomeQuoteSection() {
   const router = useRouter();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
 
     if (!form.reportValidity()) return;
 
-    router.push("/thanks-you");
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(Object.fromEntries(formData)),
+      });
+
+      if (!response.ok) {
+        const result = await response.json().catch(() => null);
+        throw new Error(result?.error || "Unable to submit your request.");
+      }
+
+      form.reset();
+      router.push("/thanks-you");
+    } catch (error) {
+      window.alert(
+        error instanceof Error
+          ? error.message
+          : "Unable to submit your request. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -94,8 +120,8 @@ export function HomeQuoteSection() {
                 </select>
               </div>
 
-              <button className="home-quote-submit" type="submit">
-                BOOK FREE MEASURE
+              <button className="home-quote-submit" disabled={isSubmitting} type="submit">
+                {isSubmitting ? "SENDING..." : "BOOK FREE MEASURE"}
               </button>
               <p className="home-quote-privacy">
                 <svg aria-hidden="true" viewBox="0 0 24 24">
