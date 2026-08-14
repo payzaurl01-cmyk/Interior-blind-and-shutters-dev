@@ -3,7 +3,8 @@ import { getProjects } from "@/lib/content";
 // Nuvora template — project index. Hero mirrors the original design; the grid is
 // generated from the projects content collection (src/content/projects/*.mdx).
 export default function ProjectPage() {
-  const projects = getProjects();
+  const projectSlugs = new Set(["bay-heights", "grove-housin", "skyline-vista"]);
+  const projects = getProjects().filter((project) => projectSlugs.has(project.slug));
   return (
     <>
       <section className="section inner-hero">
@@ -11,8 +12,8 @@ export default function ProjectPage() {
           <div className="inner-title-wrap inner-hero">
             <div className="inner-title-box is-project reveal">
               <h1 className="hero-white-title">
-                Creative Real - Estate that
-                <span className="italic none">inspires iconic properties</span>
+                Thoughtful window solutions
+                <span className="italic none">made for real homes</span>
               </h1>
             </div>
             <div className="inner-button-box reveal">
@@ -27,12 +28,10 @@ export default function ProjectPage() {
         </div>
         <div className="visual-wrap">
           <img
-            alt=""
+            alt="Custom blinds completing a warm, contemporary interior"
             className="visual"
             loading="lazy"
-            sizes="(max-width: 5760px) 100vw, 5760px"
-            src="/assets/images/Project-Banner-Image.webp"
-            srcSet="/assets/images/Project-Banner-Image-p-500.webp 500w, /assets/images/Project-Banner-Image-p-800.webp 800w, /assets/images/Project-Banner-Image-p-1080.webp 1080w, /assets/images/Project-Banner-Image-p-1600.webp 1600w, /assets/images/Project-Banner-Image-p-2000.webp 2000w, /assets/images/Project-Banner-Image-p-2600.webp 2600w, /assets/images/Project-Banner-Image-p-3200.webp 3200w, /assets/images/Project-Banner-Image.webp 5760w"
+            src="/assets/styled-windows/background.webp"
           />
           <div className="visual-overlay" />
         </div>
@@ -44,18 +43,22 @@ export default function ProjectPage() {
               <div className="project-collection-list" role="list">
                 {projects.map((project, i) => (
                   <div role="listitem" key={project.slug}>
-                    <div className="project-single-card">
-                      <div className="project-image-box">
+                    <div className="project-single-card reveal">
+                      <a
+                        aria-label={`View ${project.title} project`}
+                        className="project-image-box"
+                        href={`/project/${project.slug}`}
+                      >
                         <img alt="" className="project-image" loading="lazy" src={project.cardImage} />
-                        <a className="view-project inline-block" href={`/project/${project.slug}`}>
+                        <span className="view-project">
                           <img
                             alt=""
                             className="view-project-image"
                             loading="lazy"
                             src="/assets/images/arrow-black-right.svg"
                           />
-                        </a>
-                      </div>
+                        </span>
+                      </a>
                       <div className="project-card-content-wrap">
                         <div className="project-card-number-box">
                           <h2 className="project-card-number text-secondary">0/</h2>

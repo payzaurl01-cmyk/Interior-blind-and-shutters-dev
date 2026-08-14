@@ -339,12 +339,12 @@ export default function HomePage() {
                       <div className="project-collection-list" role="list">
                         <div role="listitem">
                           <div className="project-single-card reveal">
-                            <div className="project-image-box">
-                              <img alt="Project Image" className="project-image" loading="lazy" src="/assets/3pic/pexels-jibarofoto-14002100.jpg" />
-                              <a className="view-project inline-block" href="/project/bay-heights">
+                            <a aria-label="View whole-home roller blinds project" className="project-image-box" href="/project/bay-heights">
+                              <img alt="Whole-home roller blinds project" className="project-image" loading="lazy" src="/assets/3pic/pexels-jibarofoto-14002100.jpg" />
+                              <span className="view-project">
                                 <img alt="" className="view-project-image" loading="lazy" src="/assets/images/arrow-black-right.svg" />
-                              </a>
-                            </div>
+                              </span>
+                            </a>
                             <div className="project-card-content-wrap">
                               <div className="project-card-number-box">
                                 <p className="project-card-number text-secondary">
@@ -359,11 +359,11 @@ export default function HomePage() {
                               <div className="project-card-content-box">
                                 <a aria-label="Project Link" className="project-card-title-box inline-block" href="/project/bay-heights">
                                   <h3 className="project-card-title">
-                                    BAY HEIGHTS
+                                    WHOLE-HOME ROLLER BLINDS
                                   </h3>
                                 </a>
                                 <p className="secondary-text-regular">
-                                  6111 BurnHarvest Ave 19
+                                  Residential installation · Sydney
                                 </p>
                               </div>
                             </div>
@@ -371,12 +371,12 @@ export default function HomePage() {
                         </div>
                         <div role="listitem">
                           <div className="project-single-card reveal">
-                            <div className="project-image-box">
-                              <img alt="Project Image" className="project-image" loading="lazy" src="/assets/3pic/pexels-marina-zvada-844583049-27396178.jpg" />
-                              <a className="view-project inline-block" href="/project/grove-housin">
+                            <a aria-label="View sheer curtains and privacy project" className="project-image-box" href="/project/grove-housin">
+                              <img alt="Sheer curtains and privacy project" className="project-image" loading="lazy" src="/assets/3pic/pexels-marina-zvada-844583049-27396178.jpg" />
+                              <span className="view-project">
                                 <img alt="" className="view-project-image" loading="lazy" src="/assets/images/arrow-black-right.svg" />
-                              </a>
-                            </div>
+                              </span>
+                            </a>
                             <div className="project-card-content-wrap">
                               <div className="project-card-number-box">
                                 <p className="project-card-number text-secondary">
@@ -391,11 +391,11 @@ export default function HomePage() {
                               <div className="project-card-content-box">
                                 <a aria-label="Project Link" className="project-card-title-box inline-block" href="/project/grove-housin">
                                   <h3 className="project-card-title">
-                                    GROVE HOUSING
+                                    SHEER CURTAINS &amp; PRIVACY
                                   </h3>
                                 </a>
                                 <p className="secondary-text-regular">
-                                  6111 BurnHarvest Ave 19
+                                  Living spaces · Sydney
                                 </p>
                               </div>
                             </div>
@@ -403,12 +403,12 @@ export default function HomePage() {
                         </div>
                         <div role="listitem">
                           <div className="project-single-card reveal">
-                            <div className="project-image-box">
-                              <img alt="Project Image" className="project-image" loading="lazy" src="/assets/3pic/pexels-vi-t-anh-nguy-n-2150409023-34654506.jpg" />
-                              <a className="view-project inline-block" href="/project/skyline-vista">
+                            <a aria-label="View motorised bedroom blinds project" className="project-image-box" href="/project/skyline-vista">
+                              <img alt="Motorised bedroom blinds project" className="project-image" loading="lazy" src="/assets/3pic/pexels-vi-t-anh-nguy-n-2150409023-34654506.jpg" />
+                              <span className="view-project">
                                 <img alt="" className="view-project-image" loading="lazy" src="/assets/images/arrow-black-right.svg" />
-                              </a>
-                            </div>
+                              </span>
+                            </a>
                             <div className="project-card-content-wrap">
                               <div className="project-card-number-box">
                                 <p className="project-card-number text-secondary">
@@ -423,11 +423,11 @@ export default function HomePage() {
                               <div className="project-card-content-box">
                                 <a aria-label="Project Link" className="project-card-title-box inline-block" href="/project/skyline-vista">
                                   <h3 className="project-card-title">
-                                    SKYLINE VISTA
+                                    MOTORISED BEDROOM BLINDS
                                   </h3>
                                 </a>
                                 <p className="secondary-text-regular">
-                                  6111 BurnHarvest Ave 19
+                                  Bedroom retreat · Sydney
                                 </p>
                               </div>
                             </div>

@@ -99,6 +99,16 @@ html {
   .nav-flex > .hamburger-menu.open {
     display: none;
   }
+
+  .navbar .nav-main-menu-wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar .nav-content-wrap {
+    position: static;
+  }
 }
 
 #home-quote-section {
