@@ -816,7 +816,7 @@ export default function CheckoutPage() {
                         United Arab Emirates
                       </option>
                       <option value="GB">
-                        United Kingdom
+                        Sydney Australia
                       </option>
                       <option value="US">
                         United States
@@ -1676,7 +1676,7 @@ export default function CheckoutPage() {
                         United Arab Emirates
                       </option>
                       <option value="GB">
-                        United Kingdom
+                        Sydney Australia
                       </option>
                       <option selected value="US">
                         United States

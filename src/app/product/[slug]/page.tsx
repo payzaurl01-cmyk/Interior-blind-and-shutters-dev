@@ -14,11 +14,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) return {};
-  return { title: `${product.name} Plan`, description: product.description };
+  return { title: product.name, description: product.description };
 }
 
-// Nuvora template — plan / product detail. Layout mirrors the original design;
-// data comes from src/content/products.json and feeds the localStorage cart.
+// Product detail content comes from src/content/products.json while the hero
+// keeps the site's existing image and reveal-animation design.
 export default async function ProductDetailPage({
   params,
 }: {
@@ -28,70 +28,52 @@ export default async function ProductDetailPage({
   const product = getProduct(slug);
   if (!product) notFound();
 
-  const features = product.features.length ? product.features : new Array(6).fill("");
-
   return (
     <>
-      <section className="section pricing-single">
+      <section className="section inner-hero">
         <div className="container">
-          <div className="pricing-single-flex">
-            <div className="pricing-single-card-wrap reveal">
-              <div className="pricing-single-card">
-                <div className="pricing-card-left-box">
-                  <div className="plan-name-box">
-                    <h4 className="plan-name">{product.name}</h4>
-                    <div className="secondary-text-regular" />
-                  </div>
-                  <div className="plan-price-box">
-                    <h4 className="plan-price">{product.price}</h4>
-                    <div className="secondary-text-regular">{product.period}</div>
-                  </div>
-                  <div className="add-to-cart">
-                    <button
-                      className="plan-button add-to-cart-button"
-                      data-add-to-cart="1"
-                      data-cart-id={product.handle}
-                      data-cart-name={product.name}
-                      data-cart-price={product.price}
-                      type="button"
-                    >
-                      Add to Cart
-                    </button>
-                  </div>
-                </div>
-                <div className="pricing-card-right-box">
-                  <div className="features">Features</div>
-                  <ul className="single-feature-list list-unstyled" role="list">
-                    {features.map((feat, i) => (
-                      <li className="feature-list-item" key={i}>
-                        <div className="feature-icon-box">
-                          <img
-                            alt=""
-                            className="feature-icon"
-                            loading="lazy"
-                            src="/assets/images/693ea9c07304940fc24e8a22_tick-circle.svg"
-                          />
-                        </div>
-                        <div className="description">{feat}</div>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+          <div className="inner-title-wrap inner-hero">
+            <div className="inner-title-box is-pricing reveal">
+              <h1 className="hero-white-title">
+                Made for your space
+                <span className="italic none">{product.name}</span>
+              </h1>
             </div>
-            <div className="plan-single-right-box">
-              <div className="plan-single-title-box reveal">
-                <h2 className="single-plan-name">{product.name}</h2>
-                <p className="secondary-text-regular">{product.description}</p>
-              </div>
-              <div className="about-plan-box reveal">
-                <h3 className="abouut-plan-name">About Plan</h3>
-                <p className="secondary-text-regular">{product.description}</p>
-              </div>
-              <div className="plan-image-box reveal" />
-              <div className="plan-choose-box reveal">
-                <h4 className="choose-plan-name">Why Choose Us</h4>
-                <p />
+            <div className="inner-button-box reveal">
+              <a className="primary-button inline-block" href="/contact">
+                <div className="primary-button-text-wrap">
+                  <div className="primary-button-text">GET A FREE QUOTE</div>
+                  <div className="primary-button-hover-text">GET A FREE QUOTE</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="visual-wrap">
+          <img
+            alt={`${product.name} installed in a home`}
+            className="visual"
+            loading="eager"
+            src={product.heroImage || "/assets/images/Pricing-Banner-Image.webp"}
+            style={{ height: "100%", objectFit: "cover", width: "100%" }}
+          />
+          <div className="visual-overlay" />
+        </div>
+      </section>
+
+      <section className="section full-padding-bottom">
+        <div className="container">
+          <div className="project-single-wrap">
+            <h2 className="discover-title reveal">{product.description}</h2>
+            <div className="about-property-flex reveal">
+              <h3 className="about-property">Product highlights</h3>
+              <div className="area-address-wrap">
+                {product.features.map((feature) => (
+                  <div className="area-address-card" key={feature}>
+                    <div className="primary-text-regular">{feature}</div>
+                    <span aria-hidden="true">↗</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
