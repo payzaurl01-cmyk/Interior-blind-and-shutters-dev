@@ -105,6 +105,21 @@ html {
   scroll-margin-top: 0;
 }
 
+#contact-quote-form {
+  scroll-margin-top: 120px;
+}
+
+.contact-service-select {
+  cursor: pointer;
+  padding-right: 42px;
+  background-color: #fff;
+}
+
+.contact-from .from-button:disabled {
+  cursor: wait;
+  opacity: .65;
+}
+
 .footer-video-media {
   width: 100%;
   aspect-ratio: 1050 / 567;

@@ -154,7 +154,7 @@ export default function HomePage() {
                           className="window-story-image"
                           decoding="async"
                           height="1066"
-                          loading="lazy"
+
                           src="/assets/about%20pic%20folder/story-main.webp"
                           width="1600"
                         />
@@ -246,7 +246,7 @@ export default function HomePage() {
                             className="window-story-image"
                             decoding="async"
                             height="1600"
-                            loading="lazy"
+
                             src="/assets/about%20pic%20folder/story-showcase.webp"
                             width="1200"
                           />
@@ -266,7 +266,7 @@ export default function HomePage() {
                               className="window-story-image"
                               decoding="async"
                               height="1359"
-                              loading="lazy"
+
                               src="/assets/about%20pic%20folder/story-light.webp"
                               width="900"
                             />
@@ -285,7 +285,7 @@ export default function HomePage() {
                               className="window-story-image"
                               decoding="async"
                               height="1091"
-                              loading="lazy"
+
                               src="/assets/about%20pic%20folder/story-detail.webp"
                               width="900"
                             />
