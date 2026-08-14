@@ -28,5 +28,229 @@
       "Custom Branding – White-label options or brand customization",
       "API Access & Advanced Integrations – Connect with any platform"
     ]
+  },
+  {
+    "handle": "roller-blinds",
+    "name": "Roller Blinds",
+    "price": "Free Quote",
+    "period": "",
+    "description": "Clean-lined roller blinds made to suit your windows, light control and interior style.",
+    "heroImage": "/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48%20%281%29.jpeg",
+    "features": [
+      "Blockout, sunscreen and light-filtering fabrics",
+      "Custom measured for every window",
+      "A wide choice of colours and finishes",
+      "Manual and motorised options",
+      "Neat, professional installation",
+      "Free in-home measure and quote"
+    ]
+  },
+  {
+    "handle": "light-filtering",
+    "name": "Light Filtering Blinds",
+    "price": "Free Quote",
+    "period": "",
+    "description": "Soften daylight while keeping your rooms private, calm and beautifully bright.",
+    "heroImage": "/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49%20%281%29.jpeg",
+    "features": [
+      "Soft, diffused natural light",
+      "Daytime privacy",
+      "Custom measured for a precise fit",
+      "Multiple fabric colours and textures",
+      "Manual and motorised options",
+      "Free in-home measure and quote"
+    ]
+  },
+  {
+    "handle": "blockout-blinds",
+    "name": "Roller Blinds — Blockout",
+    "price": "Free Quote",
+    "period": "",
+    "description": "Reduce outside light and add privacy to bedrooms, media rooms and living spaces.",
+    "heroImage": "/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48.jpeg",
+    "features": [
+      "Excellent room darkening",
+      "Improved privacy",
+      "Insulating fabric options",
+      "Custom measured for every window",
+      "Clean, professional installation",
+      "Free in-home measure and quote"
+    ]
+  },
+  {
+    "handle": "sliding-door-blinds",
+    "name": "Sliding Door Roller Blinds",
+    "price": "Free Quote",
+    "period": "",
+    "description": "Practical, made-to-measure coverage for wide openings and everyday living.",
+    "heroImage": "/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49.jpeg",
+    "features": [
+      "Designed for wide door openings",
+      "Smooth and simple operation",
+      "Light-filtering and blockout choices",
+      "Custom measured for a precise fit",
+      "Durable everyday materials",
+      "Free in-home measure and quote"
+    ]
+  },
+  {
+    "handle": "custom-fit-blinds",
+    "name": "Custom Fit Blinds",
+    "price": "Free Quote",
+    "period": "",
+    "description": "Measured, made and installed neatly so every edge and detail feels intentional.",
+    "heroImage": "/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49%20%282%29.jpeg",
+    "features": [
+      "Made for your exact window dimensions",
+      "Solutions for unusual window shapes",
+      "Fabric and finish guidance",
+      "Manual and motorised options",
+      "Professional installation",
+      "Free in-home measure and quote"
+    ]
+  },
+  {
+    "handle": "outdoor-blinds",
+    "name": "Outdoor Blinds",
+    "price": "Free Quote",
+    "period": "",
+    "description": "Weather-aware shading for patios, balconies and flexible outdoor living spaces.",
+    "heroImage": "/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48.jpeg",
+    "features": [
+      "Shade and glare control",
+      "Options for patios and balconies",
+      "Durable outdoor materials",
+      "Custom measured for your opening",
+      "Manual and motorised options",
+      "Free in-home measure and quote"
+    ]
+  },
+  {
+    "handle": "zebra-blinds",
+    "name": "Zebra Blinds",
+    "price": "Free Quote",
+    "period": "",
+    "description": "Alternating sheer and solid fabric panels give you precise privacy and light control in one clean design.",
+    "heroImage": "/assets/styled-windows/better-light-control.webp",
+    "features": [
+      "Flexible privacy and light control",
+      "Contemporary layered fabric design",
+      "A wide choice of colours and textures",
+      "Custom measured for every window",
+      "Manual and motorised options",
+      "Free in-home measure and quote"
+    ]
+  },
+  {
+    "handle": "vertical-blinds",
+    "name": "Vertical Blinds",
+    "price": "Free Quote",
+    "period": "",
+    "description": "A practical, refined solution for wide windows and doors with smooth control over light and privacy.",
+    "heroImage": "/assets/styled-windows/more-privacy.webp",
+    "features": [
+      "Ideal for wide windows and sliding doors",
+      "Adjustable light and privacy",
+      "Easy-glide operation",
+      "Durable fabric choices",
+      "Custom measured and installed",
+      "Free in-home measure and quote"
+    ]
+  },
+  {
+    "handle": "cassette-blinds",
+    "name": "Cassette Blinds",
+    "price": "Free Quote",
+    "period": "",
+    "description": "A streamlined cassette conceals the roller mechanism for a neat architectural finish.",
+    "heroImage": "/assets/styled-windows/cooler-rooms.webp",
+    "features": [
+      "Clean concealed roller mechanism",
+      "Minimal architectural finish",
+      "Blockout and light-filtering fabrics",
+      "Custom colours and finishes",
+      "Precision measuring and installation",
+      "Free in-home measure and quote"
+    ]
+  },
+  {
+    "handle": "sheer-curtains",
+    "name": "Sheer Curtains",
+    "price": "Free Quote",
+    "period": "",
+    "description": "Soft, flowing sheer curtains filter daylight and bring an elegant sense of movement to the room.",
+    "heroImage": "/assets/3pic/pexels-marina-zvada-844583049-27396178.jpg",
+    "features": [
+      "Soft filtered daylight",
+      "Elegant full-height drape",
+      "Single and double-track options",
+      "A curated range of fabrics",
+      "Custom made and professionally installed",
+      "Free in-home measure and quote"
+    ]
+  },
+  {
+    "handle": "blockout-curtains",
+    "name": "Blockout Curtains",
+    "price": "Free Quote",
+    "period": "",
+    "description": "Beautifully tailored curtains designed for stronger privacy, room darkening and everyday comfort.",
+    "heroImage": "/assets/3pic/pexels-vi-t-anh-nguy-n-2150409023-34654506.jpg",
+    "features": [
+      "Strong room-darkening performance",
+      "Enhanced privacy and insulation",
+      "Tailored headings and finishes",
+      "Single and double-track options",
+      "Custom made and professionally installed",
+      "Free in-home measure and quote"
+    ]
+  },
+  {
+    "handle": "pvc-plantation-shutters",
+    "name": "PVC Plantation Shutters",
+    "price": "Free Quote",
+    "period": "",
+    "description": "Durable plantation shutters with timeless lines, easy care and dependable privacy control.",
+    "heroImage": "/assets/about%20pic%20folder/story-showcase.webp",
+    "features": [
+      "Durable moisture-resistant PVC",
+      "Adjustable privacy and airflow",
+      "Easy-clean low-maintenance finish",
+      "Made for your exact opening",
+      "Timeless plantation styling",
+      "Free in-home measure and quote"
+    ]
+  },
+  {
+    "handle": "curvers",
+    "name": "Curvers",
+    "price": "Free Quote",
+    "period": "",
+    "description": "A tailored window-furnishing solution shaped to bring clean coverage and a considered finish to your space.",
+    "heroImage": "/assets/styled-windows/motorised-blinds.webp",
+    "features": [
+      "Made-to-measure configuration",
+      "Clean, contemporary finish",
+      "Flexible light and privacy control",
+      "Material and colour guidance",
+      "Professional installation",
+      "Free in-home measure and quote"
+    ]
+  },
+  {
+    "handle": "flyscreens",
+    "name": "Flyscreens",
+    "price": "Free Quote",
+    "period": "",
+    "description": "Enjoy fresh air with a discreet made-to-measure screen that helps keep insects outside.",
+    "heroImage": "/assets/styled-windows/background.webp",
+    "features": [
+      "Fresh airflow with insect protection",
+      "Low-profile frame options",
+      "Made for windows and doors",
+      "Durable easy-care mesh",
+      "Custom measured and installed",
+      "Free in-home measure and quote"
+    ]
   }
 ]

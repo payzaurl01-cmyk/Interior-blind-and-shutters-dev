@@ -58,6 +58,7 @@ export type Product = {
   period: string;
   description: string;
   features: string[];
+  heroImage?: string;
 };
 
 function readCollection(dir: string): { data: Record<string, unknown>; body: string; slug: string }[] {

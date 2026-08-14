@@ -79,7 +79,7 @@ export default function HomePage() {
                     </p>
                   </div>
                   <div className="window-collection-grid">
-                    <a className="window-product-card reveal" href="/contact">
+                    <a className="window-product-card reveal" href="/product/roller-blinds">
                       <img alt="Roller blinds installed in a bright window" className="window-product-image" decoding="async" height="1600" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48%20%281%29.jpeg" width="1200" />
                       <span className="window-card-number">01</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
@@ -88,7 +88,7 @@ export default function HomePage() {
                         <span className="window-card-text">Clean-lined blockout, sunscreen and light-filtering options for every room.</span>
                       </span>
                     </a>
-                    <a className="window-product-card reveal" href="/contact">
+                    <a className="window-product-card reveal" href="/product/light-filtering">
                       <img alt="Light filtering roller blinds beside a chandelier" className="window-product-image" decoding="async" height="1600" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49%20%281%29.jpeg" width="1200" />
                       <span className="window-card-number">02</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
@@ -97,7 +97,7 @@ export default function HomePage() {
                         <span className="window-card-text">Soft daylight control that keeps rooms calm, private and beautifully bright.</span>
                       </span>
                     </a>
-                    <a className="window-product-card reveal" href="/contact">
+                    <a className="window-product-card reveal" href="/product/blockout-blinds">
                       <img alt="Dark blockout roller blinds in a modern room" className="window-product-image" decoding="async" height="994" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48.jpeg" width="1600" />
                       <span className="window-card-number">03</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
@@ -106,7 +106,7 @@ export default function HomePage() {
                         <span className="window-card-text">A polished finish for bedrooms, media rooms and spaces that need full privacy.</span>
                       </span>
                     </a>
-                    <a className="window-product-card reveal" href="/contact">
+                    <a className="window-product-card reveal" href="/product/sliding-door-blinds">
                       <img alt="Large grey roller blinds on sliding doors" className="window-product-image" decoding="async" height="1200" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49.jpeg" width="1600" />
                       <span className="window-card-number">04</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
@@ -115,7 +115,7 @@ export default function HomePage() {
                         <span className="window-card-text">Practical, made-to-measure coverage for wide openings and everyday living.</span>
                       </span>
                     </a>
-                    <a className="window-product-card reveal" href="/contact">
+                    <a className="window-product-card reveal" href="/product/custom-fit-blinds">
                       <img alt="Neutral roller blind fitted inside a white frame" className="window-product-image" decoding="async" height="1600" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49%20%282%29.jpeg" width="900" />
                       <span className="window-card-number">05</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
@@ -124,7 +124,7 @@ export default function HomePage() {
                         <span className="window-card-text">Measured, made and installed neatly so every edge feels intentional.</span>
                       </span>
                     </a>
-                    <a className="window-product-card reveal" href="/contact">
+                    <a className="window-product-card reveal" href="/product/outdoor-blinds">
                       <img alt="Grey indoor roller blinds fitted across a large window" className="window-product-image" decoding="async" height="994" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48.jpeg" width="1600" />
                       <span className="window-card-number">06</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
@@ -135,7 +135,7 @@ export default function HomePage() {
                     </a>
                   </div>
                   <div className="window-collection-action reveal">
-                    <a className="window-collection-button inline-block" href="/contact">
+                    <a className="window-collection-button inline-block" href="/products">
                       <span>View all window furnishings</span>
                       <span aria-hidden="true">↗</span>
                     </a>
@@ -632,7 +632,7 @@ export default function HomePage() {
                               “The bedroom blinds have elevated our space completely. From light control to privacy, everything just works. The quality is unreal.”
                             </p>
                             <p className="testimonial-text-small">
-                              Custom blackout blinds in master bedroom, Surrey, United Kingdom
+                              Custom blackout blinds in master bedroom, Surrey, Sydney Australia
                             </p>
                           </div>
                           <div className="testimonial-author-block">
@@ -658,7 +658,7 @@ export default function HomePage() {
                               “Our new roller blinds look beautifully clean and make every room feel more comfortable. The measuring and installation process was effortless from start to finish.”
                             </p>
                             <p className="testimonial-text-small">
-                              Motorised roller blinds throughout the home, Richmond, United Kingdom
+                              Motorised roller blinds throughout the home, Richmond, Sydney Australia
                             </p>
                           </div>
                           <div className="testimonial-author-block">
@@ -684,7 +684,7 @@ export default function HomePage() {
                               “The shutters have transformed the front of our home. They give us privacy without losing natural light, and the finish feels completely made for the space.”
                             </p>
                             <p className="testimonial-text-small">
-                              Made-to-measure plantation shutters, Manchester, United Kingdom
+                              Made-to-measure plantation shutters, Manchester, Sydney Australia
                             </p>
                           </div>
                           <div className="testimonial-author-block">
