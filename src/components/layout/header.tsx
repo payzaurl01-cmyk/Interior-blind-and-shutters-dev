@@ -10,7 +10,6 @@ export function Header() {
   // (light-background) page adds `nav-on-light` so the black logo (.v2) shows.
   const pathname = usePathname();
   const navbarClass = pathname === "/" ? "navbar" : "navbar nav-on-light";
-  const quoteHref = pathname === "/" ? "#home-quote-section" : "/#home-quote-section";
   return (
     <div className="header">
       <div className={navbarClass}>
@@ -28,7 +27,16 @@ export function Header() {
                   <a aria-current="page" className="menu-link" href="/">
                     Home
                   </a>
-                  <a className="menu-link" href={quoteHref}>
+                  <a className="menu-link" href="/about">
+                    About
+                  </a>
+                  <a className="menu-link" href="/products">
+                    Products
+                  </a>
+                  <a className="menu-link" href="/project">
+                    Projects
+                  </a>
+                  <a className="menu-link" href="/contact">
                     Contact
                   </a>
                 </div>
@@ -93,7 +101,43 @@ export function Header() {
                 </div>
               </div>
               <div className="single-nav-menu">
-                <a className="nav-link-wrap inline-block" href="tel:+61458822281">
+                <a className="nav-link-wrap inline-block" href="/about">
+                  <div className="nav-link-texts">
+                    <div className="nav-link-text">ABOUT</div>
+                    <div className="nav-link-text">ABOUT</div>
+                  </div>
+                </a>
+                <div className="nav-border">
+                  <div className="blog-card-divider" />
+                  <div className="blog-card-divider-hover" />
+                </div>
+              </div>
+              <div className="single-nav-menu">
+                <a className="nav-link-wrap inline-block" href="/products">
+                  <div className="nav-link-texts">
+                    <div className="nav-link-text">PRODUCTS</div>
+                    <div className="nav-link-text">PRODUCTS</div>
+                  </div>
+                </a>
+                <div className="nav-border">
+                  <div className="blog-card-divider" />
+                  <div className="blog-card-divider-hover" />
+                </div>
+              </div>
+              <div className="single-nav-menu">
+                <a className="nav-link-wrap inline-block" href="/project">
+                  <div className="nav-link-texts">
+                    <div className="nav-link-text">PROJECTS</div>
+                    <div className="nav-link-text">PROJECTS</div>
+                  </div>
+                </a>
+                <div className="nav-border">
+                  <div className="blog-card-divider" />
+                  <div className="blog-card-divider-hover" />
+                </div>
+              </div>
+              <div className="single-nav-menu">
+                <a className="nav-link-wrap inline-block" href="/contact">
                   <div className="nav-link-texts">
                     <div className="nav-link-text">
                       CONTACT

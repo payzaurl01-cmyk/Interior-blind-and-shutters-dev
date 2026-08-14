@@ -80,6 +80,15 @@ export function Footer() {
                   <a aria-current="page" className="footer-menu" href="/">
                     Home
                   </a>
+                  <a className="footer-menu" href="/about">
+                    About Us
+                  </a>
+                  <a className="footer-menu" href="/products">
+                    Products
+                  </a>
+                  <a className="footer-menu" href="/project">
+                    Projects
+                  </a>
                   <a className="footer-menu" href="/privacy-policy">
                     Privacy Policy
                   </a>

@@ -35,10 +35,10 @@ export default async function ProjectDetailPage({
   if (!project) notFound();
 
   const addressFields: [string, string][] = [
-    ["Address", project.address],
-    ["City", project.city],
-    ["Area", project.area],
-    ["Price", project.price],
+    ["Project", project.address],
+    ["Location", project.city],
+    ["Scope", project.area],
+    ["Quote", project.price],
   ];
 
   return (
@@ -67,7 +67,7 @@ export default async function ProjectDetailPage({
               <div className="primary-text-regular">{project.aboutProperty}</div>
             </div>
             <div className="area-address-wrap reveal">
-              <h4 className="area-address-title">Area Address</h4>
+              <h4 className="area-address-title">Project Details</h4>
               {addressFields.map(([label, value], i) => (
                 <Fragment key={label}>
                   <div className="area-address-card">

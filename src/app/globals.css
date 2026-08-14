@@ -99,10 +99,35 @@ html {
   .nav-flex > .hamburger-menu.open {
     display: none;
   }
+
+  .navbar .nav-main-menu-wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar .nav-content-wrap {
+    position: static;
+  }
 }
 
 #home-quote-section {
   scroll-margin-top: 0;
+}
+
+#contact-quote-form {
+  scroll-margin-top: 120px;
+}
+
+.contact-service-select {
+  cursor: pointer;
+  padding-right: 42px;
+  background-color: #fff;
+}
+
+.contact-from .from-button:disabled {
+  cursor: wait;
+  opacity: .65;
 }
 
 .footer-video-media {
