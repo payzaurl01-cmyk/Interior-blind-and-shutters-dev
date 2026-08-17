@@ -137,6 +137,14 @@ html {
   object-fit: cover;
 }
 
+@media (min-width: 1200px) {
+  .footer-medium-box {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 350px;
+    max-width: 100% !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -1299,8 +1307,8 @@ html {
 .products-list-item:hover .products-list-arrow,
 .products-list-item:focus-visible .products-list-arrow {
   transform: rotate(45deg);
-  border-color: #a4ff79;
-  background: #a4ff79;
+  border-color: #2f6bff;
+  background: #2f6bff;
   color: #061b3a;
 }
 
