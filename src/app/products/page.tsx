@@ -9,6 +9,8 @@ const PRODUCT_GROUPS = [
   {
     number: "01",
     title: "Blinds",
+    image: "/assets/productstoWEBP/roller%20blinds%20blockout_1.webp",
+    imageAlt: "Made-to-measure roller blinds in a modern interior",
     products: [
       { name: "Roller Blinds — Blockout", href: "/product/blockout-blinds" },
       { name: "Zebra Blinds", href: "/product/zebra-blinds" },
@@ -21,6 +23,8 @@ const PRODUCT_GROUPS = [
   {
     number: "02",
     title: "Curtains",
+    image: "/assets/productstoWEBP/sheer%20curtains%202.webp",
+    imageAlt: "Full-height sheer curtains softly filtering daylight",
     products: [
       { name: "Sheer Curtains", href: "/product/sheer-curtains" },
       { name: "Blockout Curtains", href: "/product/blockout-curtains" },
@@ -29,6 +33,8 @@ const PRODUCT_GROUPS = [
   {
     number: "03",
     title: "Plantation Shutters",
+    image: "/assets/productstoWEBP/pvc%20plantataion%20shutters%202.webp",
+    imageAlt: "White PVC plantation shutters in a living room",
     products: [
       { name: "PVC Plantation Shutters", href: "/product/pvc-plantation-shutters" },
     ],
@@ -36,11 +42,15 @@ const PRODUCT_GROUPS = [
   {
     number: "04",
     title: "Curvers",
+    image: "/assets/productstoWEBP/curvers%202.webp",
+    imageAlt: "Curved full-height window furnishing in a contemporary home",
     products: [{ name: "Curvers", href: "/product/curvers" }],
   },
   {
     number: "05",
     title: "Flyscreens",
+    image: "/assets/productstoWEBP/flyscreen.webp",
+    imageAlt: "Retractable flyscreen fitted across a wide doorway",
     products: [{ name: "Flyscreens", href: "/product/flyscreens" }],
   },
 ] as const;
@@ -64,7 +74,7 @@ export default function ProductsPage() {
             alt="Custom window furnishings in a bright interior"
             className="visual products-hero-image"
             loading="eager"
-            src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49.jpeg"
+            src="/assets/pic1-optimized.webp"
           />
           <div className="visual-overlay" />
         </div>
@@ -92,6 +102,12 @@ export default function ProductsPage() {
                   <span className="products-group-count">
                     {String(group.products.length).padStart(2, "0")} products
                   </span>
+                  <img
+                    alt={group.imageAlt}
+                    className="products-group-image"
+                    loading="lazy"
+                    src={group.image}
+                  />
                 </header>
 
                 <div className="products-list">

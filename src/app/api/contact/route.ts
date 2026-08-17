@@ -14,6 +14,8 @@ export async function POST(request: Request) {
     const email = typeof body.email === "string" ? body.email.trim() : "";
     const postcode = typeof body.postcode === "string" ? body.postcode.trim() : "";
     const service = typeof body.service === "string" ? body.service.trim() : "";
+    const description =
+      typeof body.description === "string" ? body.description.trim() : "";
 
     if (
       !fullName ||
@@ -21,7 +23,9 @@ export async function POST(request: Request) {
       !email ||
       !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
       !/^\d{4}$/.test(postcode) ||
-      !VALID_SERVICES.has(service)
+      !VALID_SERVICES.has(service) ||
+      !description ||
+      description.length > 2000
     ) {
       return Response.json(
         { error: "Please provide valid contact details." },
@@ -51,7 +55,7 @@ export async function POST(request: Request) {
         name: fullName,
         email,
         phone,
-        message: `Postcode: ${postcode}\nService: ${service}`,
+        message: `Postcode: ${postcode}\nService: ${service}\nDescription: ${description}`,
       }),
       cache: "no-store",
     });

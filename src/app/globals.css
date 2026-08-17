@@ -1236,6 +1236,16 @@ html {
   color: rgba(6, 27, 58, .48);
 }
 
+.products-group-image {
+  grid-column: 2;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin-top: 18px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2px;
+}
+
 .products-list {
   border-top: 1px solid rgba(6, 27, 58, .18);
 }
@@ -1308,8 +1318,8 @@ html {
 .products-list-item:focus-visible .products-list-arrow {
   transform: rotate(45deg);
   border-color: #2f6bff;
-  background: #2f6bff;
-  color: #061b3a;
+  background: #fff;
+  color: #2f6bff;
 }
 
 @media (max-width: 991px) {

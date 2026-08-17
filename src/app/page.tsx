@@ -22,7 +22,7 @@ export default function HomePage() {
                     <div className="primary-button-hover-text">Get a free measure &amp; quote</div>
                   </div>
                 </a>
-                <a className="hero-range-link" href="/project">
+                <a className="hero-range-link" href="/products">
                   <span>Explore the range</span>
                   <span className="hero-range-arrow" aria-hidden="true">
                     ↗
@@ -80,7 +80,7 @@ export default function HomePage() {
                   </div>
                   <div className="window-collection-grid">
                     <a className="window-product-card reveal" href="/product/roller-blinds">
-                      <img alt="Roller blinds installed in a bright window" className="window-product-image" decoding="async" height="1600" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48%20%281%29.jpeg" width="1200" />
+                      <img alt="Roller blinds installed in a bright window" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/roller%20blinds%20blockout_1.webp" width="1254" />
                       <span className="window-card-number">01</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
@@ -89,7 +89,7 @@ export default function HomePage() {
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/product/light-filtering">
-                      <img alt="Light filtering roller blinds beside a chandelier" className="window-product-image" decoding="async" height="1600" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49%20%281%29.jpeg" width="1200" />
+                      <img alt="Light filtering roller blinds softly diffusing daylight" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/Light%20filtering%20roller%20blinds.webp" width="1254" />
                       <span className="window-card-number">02</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
@@ -98,7 +98,7 @@ export default function HomePage() {
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/product/blockout-blinds">
-                      <img alt="Dark blockout roller blinds in a modern room" className="window-product-image" decoding="async" height="994" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48.jpeg" width="1600" />
+                      <img alt="Dark blockout roller blinds in a modern room" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/roller%20blinds%20blockout%202.webp" width="1254" />
                       <span className="window-card-number">03</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
@@ -107,7 +107,7 @@ export default function HomePage() {
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/product/sliding-door-blinds">
-                      <img alt="Large grey roller blinds on sliding doors" className="window-product-image" decoding="async" height="1200" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49.jpeg" width="1600" />
+                      <img alt="Large roller blinds fitted across sliding doors" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/sliding%20door%20roller%20blinds%202.webp" width="1254" />
                       <span className="window-card-number">04</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
@@ -116,7 +116,7 @@ export default function HomePage() {
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/product/custom-fit-blinds">
-                      <img alt="Neutral roller blind fitted inside a white frame" className="window-product-image" decoding="async" height="1600" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.49%20%282%29.jpeg" width="900" />
+                      <img alt="Custom fitted cassette blinds in a bright bedroom" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/cassette%20blinds%202.webp" width="1254" />
                       <span className="window-card-number">05</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
@@ -125,7 +125,7 @@ export default function HomePage() {
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/product/outdoor-blinds">
-                      <img alt="Grey indoor roller blinds fitted across a large window" className="window-product-image" decoding="async" height="994" loading="lazy" src="/assets/roller%20blinds/WhatsApp%20Image%202026-07-27%20at%2013.51.48.jpeg" width="1600" />
+                      <img alt="Blinds fitted across a large outdoor-facing doorway" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/vertical%20blinds%202.webp" width="1254" />
                       <span className="window-card-number">06</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
