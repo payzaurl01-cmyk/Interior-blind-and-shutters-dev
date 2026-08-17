@@ -120,6 +120,21 @@ export function ContactQuoteForm() {
         </div>
       </div>
 
+      <div className="contact-field-wrap">
+        <div className="contact-field-box">
+          <label htmlFor="contact-description">Description</label>
+          <textarea
+            className="textareea wf-input"
+            id="contact-description"
+            maxLength={2000}
+            name="description"
+            placeholder="Tell us about your windows and what you need"
+            required
+            rows={5}
+          />
+        </div>
+      </div>
+
       <button className="from-button wf-button" disabled={isSubmitting} type="submit">
         {isSubmitting ? "SENDING..." : "BOOK FREE MEASURE"}
       </button>
