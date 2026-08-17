@@ -40,7 +40,7 @@ export function LegalPage({
               <span className="legal-document-label">Legal</span>
               <strong>{title}</strong>
               <span>Last updated<br />14 August 2026</span>
-              <a href="mailto:info@interiorblindsandshutters.com.au">
+              <a href="/contact">
                 Questions? Contact us ↗
               </a>
             </aside>
