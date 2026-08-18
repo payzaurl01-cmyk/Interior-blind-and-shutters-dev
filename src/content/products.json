@@ -95,7 +95,7 @@
   },
   {
     "handle": "custom-fit-blinds",
-    "name": "Custom Fit Blinds",
+    "name": "Cassette Blinds",
     "price": "Free Quote",
     "period": "",
     "description": "Measured, made and installed neatly so every edge and detail feels intentional.",
@@ -111,7 +111,7 @@
   },
   {
     "handle": "outdoor-blinds",
-    "name": "Outdoor Blinds",
+    "name": "Vertical Blinds",
     "price": "Free Quote",
     "period": "",
     "description": "Weather-aware shading for patios, balconies and flexible outdoor living spaces.",
@@ -207,7 +207,7 @@
   },
   {
     "handle": "pvc-plantation-shutters",
-    "name": "PVC Plantation Shutters",
+    "name": "Shutters",
     "price": "Free Quote",
     "period": "",
     "description": "Durable plantation shutters with timeless lines, easy care and dependable privacy control.",

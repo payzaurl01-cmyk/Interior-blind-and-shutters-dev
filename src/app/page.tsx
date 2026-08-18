@@ -88,48 +88,48 @@ export default function HomePage() {
                         <span className="window-card-text">Clean-lined blockout, sunscreen and light-filtering options for every room.</span>
                       </span>
                     </a>
-                    <a className="window-product-card reveal" href="/product/light-filtering">
+                    <a className="window-product-card reveal" href="/product/blockout-curtains">
                       <img alt="Light filtering roller blinds softly diffusing daylight" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/Light%20filtering%20roller%20blinds.webp" width="1254" />
                       <span className="window-card-number">02</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
-                        <span className="window-card-title">Light Filtering</span>
+                        <span className="window-card-title">Blockout Curtains</span>
                         <span className="window-card-text">Soft daylight control that keeps rooms calm, private and beautifully bright.</span>
                       </span>
                     </a>
-                    <a className="window-product-card reveal" href="/product/blockout-blinds">
+                    <a className="window-product-card reveal" href="/product/pvc-plantation-shutters">
                       <img alt="Dark blockout roller blinds in a modern room" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/roller%20blinds%20blockout%202.webp" width="1254" />
                       <span className="window-card-number">03</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
-                        <span className="window-card-title">Blockout Blinds</span>
+                        <span className="window-card-title">Shutters</span>
                         <span className="window-card-text">A polished finish for bedrooms, media rooms and spaces that need full privacy.</span>
                       </span>
                     </a>
-                    <a className="window-product-card reveal" href="/product/sliding-door-blinds">
+                    <a className="window-product-card reveal" href="/product/curvers">
                       <img alt="Large roller blinds fitted across sliding doors" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/sliding%20door%20roller%20blinds%202.webp" width="1254" />
                       <span className="window-card-number">04</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
-                        <span className="window-card-title">Sliding Door Blinds</span>
+                        <span className="window-card-title">Curvers</span>
                         <span className="window-card-text">Practical, made-to-measure coverage for wide openings and everyday living.</span>
                       </span>
                     </a>
-                    <a className="window-product-card reveal" href="/product/custom-fit-blinds">
+                    <a className="window-product-card reveal" href="/product/vertical-blinds">
                       <img alt="Custom fitted cassette blinds in a bright bedroom" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/cassette%20blinds%202.webp" width="1254" />
                       <span className="window-card-number">05</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
-                        <span className="window-card-title">Custom Fit Blinds</span>
+                        <span className="window-card-title">Vertical Blinds</span>
                         <span className="window-card-text">Measured, made and installed neatly so every edge feels intentional.</span>
                       </span>
                     </a>
-                    <a className="window-product-card reveal" href="/product/outdoor-blinds">
+                    <a className="window-product-card reveal" href="/product/flyscreens">
                       <img alt="Blinds fitted across a large outdoor-facing doorway" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/vertical%20blinds%202.webp" width="1254" />
                       <span className="window-card-number">06</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
-                        <span className="window-card-title">Outdoor Blinds</span>
+                        <span className="window-card-title">Flyscreens</span>
                         <span className="window-card-text">Weather-aware shading for patios, balconies and flexible outdoor spaces.</span>
                       </span>
                     </a>
