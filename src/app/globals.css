@@ -125,6 +125,190 @@ html {
   background-color: #fff;
 }
 
+.home-service-dropdown {
+  position: relative;
+  z-index: 5;
+  margin-top: 3px;
+}
+
+.home-quote-select-field::after {
+  display: none;
+}
+
+.home-service-trigger {
+  width: 100%;
+  height: 27px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: rgba(9, 38, 83, .48);
+  font: inherit;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.home-service-trigger.has-value {
+  color: #092653;
+}
+
+.home-service-trigger svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+  transition: transform .22s ease;
+}
+
+.home-service-trigger[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+.home-service-trigger:focus-visible {
+  border-radius: 4px;
+  box-shadow: 0 0 0 3px rgba(47, 107, 255, .18);
+}
+
+.home-service-options {
+  position: absolute;
+  z-index: 50;
+  top: calc(100% + 12px);
+  right: -8px;
+  left: -8px;
+  max-height: min(290px, 44vh);
+  padding: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 14px;
+  background: rgba(7, 28, 62, .98);
+  box-shadow: 0 20px 48px rgba(3, 17, 40, .32);
+  animation: home-service-menu-in .18s ease-out;
+  backdrop-filter: blur(18px);
+  scrollbar-color: rgba(255, 255, 255, .3) transparent;
+  scrollbar-width: thin;
+}
+
+.home-service-options-header {
+  padding: 6px 9px 8px;
+  display: flex;
+  grid-column: 1 / -1;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+  color: rgba(255, 255, 255, .56);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.home-service-option {
+  width: 100%;
+  min-height: 38px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: rgba(255, 255, 255, .9);
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.25;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color .16s ease, color .16s ease, transform .16s ease;
+}
+
+.home-service-option:hover,
+.home-service-option.is-active {
+  background: #2f6bff;
+  color: #fff;
+}
+
+.home-service-option svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+@keyframes home-service-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(.98);
+  }
+}
+
+.contact-service-dropdown {
+  z-index: 10;
+  margin-top: 0;
+}
+
+.contact-service-dropdown .home-service-trigger {
+  min-height: 60px;
+  height: auto;
+  padding: 12px 16px;
+  border: 1px solid var(--_colors---strock-color);
+  border-radius: 12px;
+  background: #fff;
+  color: rgba(117, 118, 110, .62);
+  font-size: 20px;
+}
+
+.contact-service-dropdown .home-service-trigger.has-value {
+  color: var(--_colors---text-primary);
+}
+
+.contact-service-dropdown .home-service-options {
+  right: 0;
+  left: 0;
+}
+
+@media (max-width: 767px) {
+  .home-service-options {
+    right: -4px;
+    left: -4px;
+    max-height: min(260px, 40vh);
+    grid-template-columns: 1fr;
+    border-radius: 12px;
+  }
+
+  .home-service-option {
+    min-height: 40px;
+    font-size: 14px;
+  }
+
+  .contact-service-dropdown .home-service-trigger {
+    min-height: 48px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-service-options {
+    animation: none;
+  }
+}
+
 .contact-from .from-button:disabled {
   cursor: wait;
   opacity: .65;

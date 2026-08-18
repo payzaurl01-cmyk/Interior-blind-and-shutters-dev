@@ -1,17 +1,67 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import { serviceOptions } from "@/components/service-options";
 
 export function HomeQuoteSection() {
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [service, setService] = useState("");
+  const [isServiceOpen, setIsServiceOpen] = useState(false);
+  const [activeServiceIndex, setActiveServiceIndex] = useState(0);
+  const serviceDropdownRef = useRef<HTMLDivElement>(null);
+  const serviceButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    function closeDropdown(event: PointerEvent) {
+      if (!serviceDropdownRef.current?.contains(event.target as Node)) {
+        setIsServiceOpen(false);
+      }
+    }
+
+    document.addEventListener("pointerdown", closeDropdown);
+    return () => document.removeEventListener("pointerdown", closeDropdown);
+  }, []);
+
+  function selectService(value: string) {
+    setService(value);
+    setIsServiceOpen(false);
+    serviceButtonRef.current?.focus();
+  }
+
+  function handleServiceKeyDown(event: KeyboardEvent<HTMLButtonElement>) {
+    if (event.key === "Escape") {
+      setIsServiceOpen(false);
+      return;
+    }
+
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      event.preventDefault();
+      setIsServiceOpen(true);
+      setActiveServiceIndex((current) => {
+        const direction = event.key === "ArrowDown" ? 1 : -1;
+        return (current + direction + serviceOptions.length) % serviceOptions.length;
+      });
+      return;
+    }
+
+    if ((event.key === "Enter" || event.key === " ") && isServiceOpen) {
+      event.preventDefault();
+      selectService(serviceOptions[activeServiceIndex].value);
+    }
+  }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
 
     if (!form.reportValidity()) return;
+    if (!service) {
+      setIsServiceOpen(true);
+      serviceButtonRef.current?.focus();
+      return;
+    }
 
     setIsSubmitting(true);
 
@@ -29,6 +79,7 @@ export function HomeQuoteSection() {
       }
 
       form.reset();
+      setService("");
       router.push("/thanks-you");
     } catch (error) {
       window.alert(
@@ -109,15 +160,64 @@ export function HomeQuoteSection() {
                 />
               </div>
               <div className="home-quote-field home-quote-select-field">
-                <label htmlFor="home-quote-service">Required Service</label>
-                <select defaultValue="" id="home-quote-service" name="service" required>
-                  <option disabled value="">Select a service</option>
-                  <option value="roller-blinds">Roller Blinds</option>
-                  <option value="shutters">Shutters</option>
-                  <option value="curtains">Curtains</option>
-                  <option value="outdoor-blinds">Outdoor Blinds</option>
-                  <option value="other">Other</option>
-                </select>
+                <label id="home-quote-service-label">Required Service</label>
+                <div className="home-service-dropdown" ref={serviceDropdownRef}>
+                  <input name="service" type="hidden" value={service} />
+                  <button
+                    aria-controls="home-quote-service-options"
+                    aria-expanded={isServiceOpen}
+                    aria-haspopup="listbox"
+                    aria-labelledby="home-quote-service-label home-quote-service-value"
+                    className={`home-service-trigger${service ? " has-value" : ""}`}
+                    id="home-quote-service"
+                    onClick={() => setIsServiceOpen((open) => !open)}
+                    onKeyDown={handleServiceKeyDown}
+                    ref={serviceButtonRef}
+                    type="button"
+                  >
+                    <span id="home-quote-service-value">
+                      {serviceOptions.find((option) => option.value === service)?.label ||
+                        "Select a service"}
+                    </span>
+                    <svg aria-hidden="true" viewBox="0 0 20 20">
+                      <path d="m5 7.5 5 5 5-5" />
+                    </svg>
+                  </button>
+
+                  {isServiceOpen && (
+                    <div
+                      aria-labelledby="home-quote-service-label"
+                      className="home-service-options"
+                      id="home-quote-service-options"
+                      role="listbox"
+                    >
+                      <div className="home-service-options-header">
+                        <span>Choose a service</span>
+                        <span>{serviceOptions.length} options</span>
+                      </div>
+                      {serviceOptions.map((option, index) => (
+                        <button
+                          aria-selected={service === option.value}
+                          className={`home-service-option${
+                            index === activeServiceIndex ? " is-active" : ""
+                          }`}
+                          key={option.value}
+                          onClick={() => selectService(option.value)}
+                          onMouseEnter={() => setActiveServiceIndex(index)}
+                          role="option"
+                          type="button"
+                        >
+                          <span>{option.label}</span>
+                          {service === option.value && (
+                            <svg aria-hidden="true" viewBox="0 0 20 20">
+                              <path d="m4.5 10 3.5 3.5 7.5-8" />
+                            </svg>
+                          )}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
 
               <button className="home-quote-submit" disabled={isSubmitting} type="submit">

@@ -12,7 +12,7 @@ const PRODUCT_GROUPS = [
     image: "/assets/productstoWEBP/roller%20blinds%20blockout_1.webp",
     imageAlt: "Made-to-measure roller blinds in a modern interior",
     products: [
-      { name: "Roller Blinds — Blockout", href: "/product/blockout-blinds" },
+      { name: "Roller Blinds", href: "/product/roller-blinds" },
       { name: "Zebra Blinds", href: "/product/zebra-blinds" },
       { name: "Vertical Blinds", href: "/product/vertical-blinds" },
       { name: "Sliding Door Roller Blinds", href: "/product/sliding-door-blinds" },
@@ -32,11 +32,11 @@ const PRODUCT_GROUPS = [
   },
   {
     number: "03",
-    title: "Plantation Shutters",
+    title: "Shutters",
     image: "/assets/productstoWEBP/pvc%20plantataion%20shutters%202.webp",
     imageAlt: "White PVC plantation shutters in a living room",
     products: [
-      { name: "PVC Plantation Shutters", href: "/product/pvc-plantation-shutters" },
+      { name: "Shutters", href: "/product/pvc-plantation-shutters" },
     ],
   },
   {
