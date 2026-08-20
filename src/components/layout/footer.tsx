@@ -31,9 +31,15 @@ export function Footer() {
               </div>
 
               <div className="footer-contact-wrap">
-                <div className="small-text">CONTACT</div>
+                <div className="small-text font-bold">CONTACT</div>
                 <a className="footer-contact-link" href="tel:+61458822281">
-                  +61 458 822 281
+                  +61 458 822 281 
+                </a>
+              </div>
+               <div className="footer-contact-wrap">
+                <div className="small-text font-bold">ADDRESS</div>
+                <a className="footer-contact-link" href="tel:+61458822281">
+                 9 Muir Road Edmondson Park, NSW 2174
                 </a>
               </div>
 

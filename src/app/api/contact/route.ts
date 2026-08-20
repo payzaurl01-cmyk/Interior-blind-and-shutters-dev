@@ -1,10 +1,6 @@
-const VALID_SERVICES = new Set([
-  "roller-blinds",
-  "shutters",
-  "curtains",
-  "outdoor-blinds",
-  "other",
-]);
+import { serviceOptions } from "@/components/service-options";
+
+const VALID_SERVICES = new Set(serviceOptions.map(({ value }) => value));
 
 export async function POST(request: Request) {
   try {
@@ -16,15 +12,18 @@ export async function POST(request: Request) {
     const service = typeof body.service === "string" ? body.service.trim() : "";
     const description =
       typeof body.description === "string" ? body.description.trim() : "";
+    const phoneDigits = phone.replace(/\D/g, "");
+    const isAustralianPhone = /^(?:0[23478]\d{8}|61[23478]\d{8})$/.test(
+      phoneDigits
+    );
 
     if (
       !fullName ||
-      !phone ||
+      !isAustralianPhone ||
       !email ||
       !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
       !/^\d{4}$/.test(postcode) ||
       !VALID_SERVICES.has(service) ||
-      !description ||
       description.length > 2000
     ) {
       return Response.json(

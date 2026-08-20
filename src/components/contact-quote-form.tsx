@@ -114,6 +114,7 @@ export function ContactQuoteForm() {
             className="field wf-input"
             id="contact-phone"
             inputMode="tel"
+            maxLength={20}
             name="phone"
             placeholder="0458 822 281"
             required
@@ -142,10 +143,17 @@ export function ContactQuoteForm() {
             className="field wf-input"
             id="contact-postcode"
             inputMode="numeric"
+            maxLength={4}
             name="postcode"
+            onInput={(event) => {
+              event.currentTarget.value = event.currentTarget.value
+                .replace(/\D/g, "")
+                .slice(0, 4);
+            }}
             pattern="[0-9]{4}"
             placeholder="3000"
             required
+            title="Enter a 4-digit Australian postcode"
             type="text"
           />
         </div>
