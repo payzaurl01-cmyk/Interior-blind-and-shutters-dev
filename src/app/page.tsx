@@ -89,43 +89,43 @@ export default function HomePage() {
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/product/blockout-curtains">
-                      <img alt="Light filtering roller blinds softly diffusing daylight" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/Light%20filtering%20roller%20blinds.webp" width="1254" />
+                      <img alt="Light filtering roller blinds softly diffusing daylight" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/vertical%20blinds%202.webp" width="1254" />
                       <span className="window-card-number">02</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
-                        <span className="window-card-title">Blockout Curtains</span>
+                        <span className="window-card-title">Vertical Blinds</span>
                         <span className="window-card-text">Soft daylight control that keeps rooms calm, private and beautifully bright.</span>
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/product/pvc-plantation-shutters">
-                      <img alt="Dark blockout roller blinds in a modern room" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/roller%20blinds%20blockout%202.webp" width="1254" />
+                      <img alt="Dark blockout roller blinds in a modern room" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/blockout curtains.webp" width="1254" />
                       <span className="window-card-number">03</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
-                        <span className="window-card-title">Shutters</span>
+                        <span className="window-card-title">Curtains</span>
                         <span className="window-card-text">A polished finish for bedrooms, media rooms and spaces that need full privacy.</span>
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/product/curvers">
-                      <img alt="Large roller blinds fitted across sliding doors" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/sliding%20door%20roller%20blinds%202.webp" width="1254" />
+                      <img alt="Large roller blinds fitted across sliding doors" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/pvc plantataion shutters.webp" width="1254" />
                       <span className="window-card-number">04</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
-                        <span className="window-card-title">Curvers</span>
+                        <span className="window-card-title">PVC Shutters</span>
                         <span className="window-card-text">Practical, made-to-measure coverage for wide openings and everyday living.</span>
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/product/vertical-blinds">
-                      <img alt="Custom fitted cassette blinds in a bright bedroom" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/cassette%20blinds%202.webp" width="1254" />
+                      <img alt="Custom fitted cassette blinds in a bright bedroom" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/luxxshade.jpeg" width="1254" />
                       <span className="window-card-number">05</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
-                        <span className="window-card-title">Vertical Blinds</span>
+                        <span className="window-card-title">Luxx Shades</span>
                         <span className="window-card-text">Measured, made and installed neatly so every edge feels intentional.</span>
                       </span>
                     </a>
                     <a className="window-product-card reveal" href="/product/flyscreens">
-                      <img alt="Blinds fitted across a large outdoor-facing doorway" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/productstoWEBP/vertical%20blinds%202.webp" width="1254" />
+                      <img alt="Blinds fitted across a large outdoor-facing doorway" className="window-product-image" decoding="async" height="1254" loading="lazy" src="/assets/flyscreen.jpeg" width="1254" />
                       <span className="window-card-number">06</span>
                       <span className="window-card-arrow" aria-hidden="true">↗</span>
                       <span className="window-card-content">
@@ -188,37 +188,52 @@ export default function HomePage() {
                 </div>
 
                 <div className="window-story-brands" aria-labelledby="window-story-brands-title">
-                  <div className="window-story-brands-content reveal">
-
-                    <h2 className="window-story-title window-story-brands-title" id="window-story-brands-title">
-                      <span>Brands chosen</span>
-                      <span>for quality.</span>
-                      <span className="italic none">Materials made to last.</span>
-                    </h2>
-                    <p className="window-story-copy window-story-brands-copy">
-                      We work with trusted blind and window furnishing brands to offer a considered range of fabrics, components and finishes for Australian homes.
-                    </p>
-                    <a className="window-story-brands-button" href="/contact">
-                      VIEW FABRIC OPTIONS
-                    </a>
+                  <div className="window-story-brands-top">
+                    <div className="window-story-brands-content reveal">
+                      <h2 className="window-story-title window-story-brands-title" id="window-story-brands-title">
+                        <span>Brands chosen</span>
+                        <span>for quality.</span>
+                        <span className="italic none">Materials made to last.</span>
+                      </h2>
+                    </div>
+                    <div className="window-story-brand-visual reveal" role="img" aria-label="Six carefully selected furnishing brands">
+                      <div className="window-story-brand-visual-label">
+                        <span>CURATED PARTNERS</span>
+                        <span>AUSTRALIA</span>
+                      </div>
+                      <div className="window-story-brand-orbit" aria-hidden="true">
+                        <span className="window-story-brand-ring window-story-brand-ring-outer" />
+                        <span className="window-story-brand-ring window-story-brand-ring-inner" />
+                        <span className="window-story-brand-orbit-dot" />
+                        <div className="window-story-brand-orbit-core">
+                          <strong>06</strong>
+                          <span>TRUSTED<br />BRANDS</span>
+                        </div>
+                      </div>
+                      <div className="window-story-brand-values" aria-hidden="true">
+                        <span>PERFORMANCE</span>
+                        <span>TEXTURE</span>
+                        <span>FINISH</span>
+                      </div>
+                    </div>
                   </div>
                   <div className="window-story-brand-row reveal" aria-label="Trusted material brands">
                     <div className="window-story-brand-track">
                       <div className="window-story-brand-group">
-                        <span>SHAW</span>
-                        <span>Texstyle</span>
-                        <span>Vertex</span>
-                        <span>Nettex<sup>®</sup></span>
-                        <span>Hoad</span>
-                        <span>Louvolite<sup>®</sup></span>
+                        <img alt="Shaw Performance Products" className="window-story-brand-logo" height="100" src="/assets/brand%20logos/1.png" width="300" />
+                        <img alt="Alpha Furnishing Motorization" className="window-story-brand-logo" height="100" src="/assets/brand%20logos/2.png" width="300" />
+                        <img alt="Louvolite" className="window-story-brand-logo" height="100" src="/assets/brand%20logos/3.png" width="300" />
+                        <img alt="Texstyle" className="window-story-brand-logo" height="100" src="/assets/brand%20logos/4.png" width="300" />
+                        <img alt="Vertex Fabrics" className="window-story-brand-logo" height="100" src="/assets/brand%20logos/5.png" width="300" />
+                        <img alt="Nettex Interior Textiles" className="window-story-brand-logo" height="100" src="/assets/brand%20logos/6.png" width="300" />
                       </div>
                       <div className="window-story-brand-group" aria-hidden="true">
-                        <span>SHAW</span>
-                        <span>Texstyle</span>
-                        <span>Vertex</span>
-                        <span>Nettex<sup>®</sup></span>
-                        <span>Hoad</span>
-                        <span>Louvolite<sup>®</sup></span>
+                        <img alt="" className="window-story-brand-logo" height="100" src="/assets/brand%20logos/1.png" width="300" />
+                        <img alt="" className="window-story-brand-logo" height="100" src="/assets/brand%20logos/2.png" width="300" />
+                        <img alt="" className="window-story-brand-logo" height="100" src="/assets/brand%20logos/3.png" width="300" />
+                        <img alt="" className="window-story-brand-logo" height="100" src="/assets/brand%20logos/4.png" width="300" />
+                        <img alt="" className="window-story-brand-logo" height="100" src="/assets/brand%20logos/5.png" width="300" />
+                        <img alt="" className="window-story-brand-logo" height="100" src="/assets/brand%20logos/6.png" width="300" />
                       </div>
                     </div>
                   </div>
