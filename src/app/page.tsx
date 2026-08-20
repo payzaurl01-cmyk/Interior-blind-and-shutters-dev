@@ -1,4 +1,5 @@
 import { HomeQuoteSection } from "@/components/home-quote-section";
+import { ProjectVideoSlider } from "@/components/project-video-slider";
 
 export default function HomePage() {
   return (
@@ -349,110 +350,7 @@ export default function HomePage() {
                       </a>
                     </div>
                   </div>
-                  <div className="inner-project-wrap is-desktop">
-                    <div>
-                      <div className="project-collection-list" role="list">
-                        <div role="listitem">
-                          <div className="project-single-card reveal">
-                            <a aria-label="View whole-home roller blinds project" className="project-image-box" href="/project/bay-heights">
-                              <img alt="Whole-home roller blinds project" className="project-image" loading="lazy" src="/assets/3pic/pexels-jibarofoto-14002100.jpg" />
-                              <span className="view-project">
-                                <img alt="" className="view-project-image" loading="lazy" src="/assets/images/arrow-black-right.svg" />
-                              </span>
-                            </a>
-                            <div className="project-card-content-wrap">
-                              <div className="project-card-number-box">
-                                <p className="project-card-number text-secondary">
-                                  0/
-                                </p>
-                                <div className="text-dark">
-                                  <p className="project-card-number">
-                                    1
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="project-card-content-box">
-                                <a aria-label="Project Link" className="project-card-title-box inline-block" href="/project/bay-heights">
-                                  <h3 className="project-card-title">
-                                    WHOLE-HOME ROLLER BLINDS
-                                  </h3>
-                                </a>
-                                <p className="secondary-text-regular">
-                                  Residential installation · Sydney
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div role="listitem">
-                          <div className="project-single-card reveal">
-                            <a aria-label="View sheer curtains and privacy project" className="project-image-box" href="/project/grove-housin">
-                              <img alt="Sheer curtains and privacy project" className="project-image" loading="lazy" src="/assets/3pic/pexels-marina-zvada-844583049-27396178.jpg" />
-                              <span className="view-project">
-                                <img alt="" className="view-project-image" loading="lazy" src="/assets/images/arrow-black-right.svg" />
-                              </span>
-                            </a>
-                            <div className="project-card-content-wrap">
-                              <div className="project-card-number-box">
-                                <p className="project-card-number text-secondary">
-                                  0/
-                                </p>
-                                <div className="text-dark">
-                                  <p className="project-card-number">
-                                    2
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="project-card-content-box">
-                                <a aria-label="Project Link" className="project-card-title-box inline-block" href="/project/grove-housin">
-                                  <h3 className="project-card-title">
-                                    SHEER CURTAINS &amp; PRIVACY
-                                  </h3>
-                                </a>
-                                <p className="secondary-text-regular">
-                                  Living spaces · Sydney
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div role="listitem">
-                          <div className="project-single-card reveal">
-                            <a aria-label="View motorised bedroom blinds project" className="project-image-box" href="/project/skyline-vista">
-                              <img alt="Motorised bedroom blinds project" className="project-image" loading="lazy" src="/assets/3pic/pexels-vi-t-anh-nguy-n-2150409023-34654506.jpg" />
-                              <span className="view-project">
-                                <img alt="" className="view-project-image" loading="lazy" src="/assets/images/arrow-black-right.svg" />
-                              </span>
-                            </a>
-                            <div className="project-card-content-wrap">
-                              <div className="project-card-number-box">
-                                <p className="project-card-number text-secondary">
-                                  0/
-                                </p>
-                                <div className="text-dark">
-                                  <p className="project-card-number">
-                                    3
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="project-card-content-box">
-                                <a aria-label="Project Link" className="project-card-title-box inline-block" href="/project/skyline-vista">
-                                  <h3 className="project-card-title">
-                                    MOTORISED BEDROOM BLINDS
-                                  </h3>
-                                </a>
-                                <p className="secondary-text-regular">
-                                  Bedroom retreat · Sydney
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="inner-project-wrap is-tablet">
-                  </div>
+                  <ProjectVideoSlider />
                 </div>
               </div>
             </section>
