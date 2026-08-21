@@ -1,88 +1,90 @@
-import { getProjects } from "@/lib/content";
+import type { Metadata } from "next";
+import Image from "next/image";
+import { ProjectGallery } from "@/components/project-gallery";
 
-// Nuvora template — project index. Hero mirrors the original design; the grid is
-// generated from the projects content collection (src/content/projects/*.mdx).
+export const metadata: Metadata = {
+  title: "Our Projects",
+  description: "Explore our made-to-measure blinds, curtains and styled window installations across Sydney.",
+};
+
 export default function ProjectPage() {
-  const projectSlugs = new Set(["bay-heights", "grove-housin", "skyline-vista"]);
-  const projects = getProjects().filter((project) => projectSlugs.has(project.slug));
   return (
-    <>
-      <section className="section inner-hero">
-        <div className="container">
-          <div className="inner-title-wrap inner-hero">
-            <div className="inner-title-box is-project reveal">
-              <h1 className="hero-white-title">
-                Thoughtful window solutions
-                <span className="italic none">made for real homes</span>
-              </h1>
-            </div>
-            <div className="inner-button-box reveal">
-              <a className="primary-button inline-block" href="/contact">
-                <div className="primary-button-text-wrap">
-                  <div className="primary-button-text">GET IN TOUCH</div>
-                  <div className="primary-button-hover-text">GET IN TOUCH</div>
-                </div>
-              </a>
+    <main className="all-projects-page">
+      <section className="all-projects-hero">
+        <div className="all-projects-shell">
+          <p className="all-projects-eyebrow reveal">SYDNEY &amp; SURROUNDS</p>
+          <h1 className="all-projects-title reveal">
+            Homes we’ve <em>transformed.</em>
+          </h1>
+          <div className="all-projects-intro-row">
+            <p className="all-projects-intro reveal">
+              Every project is measured, made and installed by us. Explore considered window solutions created for real Sydney homes.
+            </p>
+            <div className="all-projects-stats reveal" aria-label="Project highlights">
+              <div><strong>600+</strong><span>INSTALLS COMPLETED</span></div>
+              <div><strong>5★</strong><span>CUSTOMER RATING</span></div>
             </div>
           </div>
         </div>
-        <div className="visual-wrap">
-          <img
-            alt="Custom blinds completing a warm, contemporary interior"
-            className="visual"
-            loading="lazy"
-            src="/assets/styled-windows/background.webp"
-          />
-          <div className="visual-overlay" />
-        </div>
       </section>
-      <section className="section project-padding-bottom">
-        <div className="container">
-          <div className="inner-wrap">
-            <div>
-              <div className="project-collection-list" role="list">
-                {projects.map((project, i) => (
-                  <div role="listitem" key={project.slug}>
-                    <div className="project-single-card reveal">
-                      <a
-                        aria-label={`View ${project.title} project`}
-                        className="project-image-box"
-                        href={`/project/${project.slug}`}
-                      >
-                        <img alt="" className="project-image" loading="lazy" src={project.cardImage} />
-                        <span className="view-project">
-                          <img
-                            alt=""
-                            className="view-project-image"
-                            loading="lazy"
-                            src="/assets/images/arrow-black-right.svg"
-                          />
-                        </span>
-                      </a>
-                      <div className="project-card-content-wrap">
-                        <div className="project-card-number-box">
-                          <h2 className="project-card-number text-secondary">0/</h2>
-                          <h2 className="project-card-number">{i + 1}</h2>
-                        </div>
-                        <div className="project-card-content-box">
-                          <a
-                            aria-label="Project Link"
-                            className="project-card-title-box inline-block"
-                            href={`/project/${project.slug}`}
-                          >
-                            <h3 className="project-card-title">{project.title}</h3>
-                          </a>
-                          <div className="secondary-text-regular">{project.address}</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+
+      <section className="all-projects-feature-wrap">
+        <div className="all-projects-shell">
+          <div className="all-projects-feature reveal">
+            <div className="all-projects-feature-copy">
+              <p>FEATURED INSTALLATION</p>
+              <h2 className="hero-white-title "> Made for the way you live.</h2>
+              <span>From soft filtered daylight to complete privacy, every detail is chosen to make the room feel calmer, more comfortable and beautifully finished.</span>
+            </div>
+            <div className="all-projects-feature-images">
+              <div className="all-projects-feature-image">
+                <Image alt="Bright room before its custom window treatment" fill quality={78} sizes="(max-width: 991px) 50vw, 36vw" src="/assets/projects%20images/WhatsApp%20Image%202026-08-20%20at%2012.55.47.jpeg" />
               </div>
+              <div className="all-projects-feature-image">
+                <Image alt="Finished window with a tailored treatment" fill quality={78} sizes="(max-width: 991px) 50vw, 36vw" src="/assets/styled-windows/background.webp" />
+              </div>
+              <span aria-hidden="true">↔</span>
             </div>
           </div>
         </div>
       </section>
-    </>
+
+      <section className="all-projects-gallery-section">
+        <div className="all-projects-shell">
+          <div className="all-projects-gallery-heading reveal">
+            <p>OUR WORK</p>
+            <h2>Browse every <em>installation.</em></h2>
+          </div>
+          <ProjectGallery />
+          <section className="all-projects-reviews" aria-labelledby="project-reviews-title">
+            <div className="all-projects-reviews-heading">
+              <p>HOMEOWNER STORIES</p>
+              <h2 className="hero-white-title" id="project-reviews-title">The best finish is a <em>happy home.</em></h2>
+            </div>
+            <div className="all-projects-review-grid">
+              <article className="all-projects-review-card">
+                <div className="all-projects-review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>“The whole process felt effortless. The team helped us choose the right fabric, measured everything carefully and left every room beautifully finished.”</blockquote>
+                <footer><strong>Amelia R.</strong><span>Sheer curtains · Sydney</span></footer>
+              </article>
+              <article className="all-projects-review-card is-featured">
+                <div className="all-projects-review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>“Our new blinds completely changed the light in the house. They look clean, work perfectly and the installation was exceptionally tidy.”</blockquote>
+                <footer><strong>Michael T.</strong><span>Roller blinds · Castle Hill</span></footer>
+              </article>
+              <article className="all-projects-review-card">
+                <div className="all-projects-review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>“We finally have privacy without losing the natural light we love. Every detail feels considered and made for our home.”</blockquote>
+                <footer><strong>Priya S.</strong><span>Layered curtains · Parramatta</span></footer>
+              </article>
+            </div>
+          </section>
+          <div className="all-projects-bottom-cta reveal">
+            <p>Have a window in mind?</p>
+            <a href="/contact">BOOK A FREE MEASURE &amp; QUOTE <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

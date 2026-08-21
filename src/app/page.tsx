@@ -351,6 +351,17 @@ export default function HomePage() {
                     </div>
                   </div>
                   <ProjectVideoSlider />
+                  <div className="project-video-cta reveal">
+                    <a className="second-button inline-block" href="/project">
+                      <div className="project-button-content">
+                        <div className="primary-button-text-wrap">
+                          <div className="primary-button-text">VIEW ALL PROJECTS</div>
+                          <div className="primary-button-hover-text">VIEW ALL PROJECTS</div>
+                        </div>
+                        <span className="project-video-cta-arrow" aria-hidden="true">↗</span>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </section>
